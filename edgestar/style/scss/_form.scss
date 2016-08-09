@@ -1,0 +1,42 @@
+.comment-form input[type="submit"] {
+  margin-top: 10px;
+  float: right;
+  font-size: 0.9em;
+  background-color: $brand-a;
+}
+
+form footer a {
+  color: #fff;
+  padding: 9px 25px;
+  vertical-align: middle;
+  margin: 0 2px;
+  &:hover, &:focus {
+    color: #fff;
+  }
+}
+
+.form input {
+  height: 35px;
+  border-radius: 0;
+  border: 1px solid #e7e7e7;
+  padding: 0px 10px;
+}
+
+.form-field #request_description {
+  border-color: #e7e7e7;
+  margin-bottom: 10px;
+  border-radius: 0;
+}
+
+form footer a {
+  background: $brand-a;
+  padding: 0 26px;
+  font-size: 1.2em;
+  border-radius: 3px;
+  float: left;
+  color: #fff;
+}
+
+.form footer {
+  border-top: 0;
+}

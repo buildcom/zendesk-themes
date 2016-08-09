@@ -1,0 +1,61 @@
+////////////////////
+// RESET
+////////////////////
+
+html, body, div, span, 
+h1, h2, h3, h4, a, p, 
+img, i, ol, ul, li, 
+textarea, button, input {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+body {
+  font-family: $primary-site-font !important;
+  padding-bottom: 40px;
+}
+
+img, iframe {
+  display: inline-block;
+  border: none;
+  max-width: 100%;
+}
+
+a {
+  background: transparent;
+  text-decoration: none;
+}
+
+body a {
+  text-decoration: none;
+  color: $brand-a;
+  &:hover, &:focus {
+    text-decoration: none;
+    color: $brand-a;
+  }
+}
+
+h3 {
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+ul li {
+  list-style: none;
+}
+
+body {
+  .btn {
+    &:hover, &:focus {
+      color: #fff;
+    }
+  }
+  pre {
+    white-space: normal;
+  }
+}
+
+main {
+  min-height: 400px;
+}

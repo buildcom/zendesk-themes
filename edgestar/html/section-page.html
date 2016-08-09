@@ -1,0 +1,33 @@
+<div class="breadcrumb-wrapper">
+   <div class="container">{{breadcrumbs}}</div>
+</div>
+<div class="container started section-page">
+   <div id="section_articles_container" class="content-section">
+      <div class="section-tree">
+         <section class="section">
+         	<div class="pull-right">{{subscribe}}</div>
+            <h3 class="title">{{section.name}}</h3>
+            <p>{{section.description}}</p>
+            <ul class="article-list">
+            	{{#if section.articles}}
+				  <ul class="article-list">
+				    {{#each section.articles}}
+				      <li {{#if promoted}} class="article-promoted" {{/if}}>
+				        {{#if promoted}}
+				          <span data-title="{{t 'promoted'}}">★</span>
+				        {{/if}}
+				        <a href="{{url}}">{{title}}</a>
+				      </li>
+				    {{/each}}
+				  </ul>
+				{{else}}
+				  <i class="section-empty">
+				    <a href="{{section.url}}">{{t 'empty'}}</a>
+				  </i>
+				{{/if}}
+				{{pagination}}
+            </ul>
+         </section>
+      </div>
+   </div>
+</div>

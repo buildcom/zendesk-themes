@@ -1,0 +1,85 @@
+<div class="header-bg">
+  <div class="container text-center">
+    <div class="col-xs-12 col-md-8 col-md-offset-2">
+      <div class="row">
+        <div class="col-xs-4">
+          <a href="http://www.edgestar.com/">
+            <img class="img-responsive center-block brand-logo" src="{{asset 'edgestar-logo-white.png'}}" alt="Edgestar Logo">
+          </a>
+        </div>
+        <div class="col-xs-4">
+          <a href="http://www.avallon.com/">
+            <img class="img-responsive center-block brand-logo" src="{{asset 'avallon-logo-white.png'}}" alt="Avallon Logo">
+          </a>
+        </div>
+        <div class="col-xs-4">
+          <a href="https://www.edgestar.com/about-us/BRAND_COMPANY,default,pg.html">
+            <img class="img-responsive center-block brand-logo" src="{{asset 'koldfront-logo-white.png'}}" alt="Koldfront Logo">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-md-8 col-md-offset-2">
+        <div id="home-page-search">
+          {{search instant=true}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container home-section">
+  <div class="row">
+    <div class="col-xs-12 col-sm-8">
+      <div class="row">
+        {{#each categories}}
+          <div class="col-xs-12 col-sm-6">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <div class="panel-title">
+                  <a href="{{url}}">
+                    {{name}}
+                  </a> 
+                </div>
+              </div>
+              <div class="panel-body">
+                Description: {{description}}  
+              </div>
+              <div class="list-group">
+                {{#each sections}}
+                  <a href="{{url}}" class="list-group-item">
+                    <h5>{{name}}</h5>
+                  </a>
+                {{/each}}
+              </div>
+            </div>
+          </div>
+          {{#is '@index % 2' '0'}}
+            <div class="clearfix"></div>
+          {{/is}}
+        {{/each}}
+      </div>
+    </div> <!-- end col -->
+    <div class="col-xs-12 col-sm-4">
+      <section>
+        {{#if promoted_articles}}
+          <div class="promoted-articles">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <div class="panel-title">
+                  {{t 'promoted_articles'}}
+                </div>
+              </div>
+              <div class="list-group">
+                {{#each promoted_articles}}
+                  <a class="list-group-item" href="{{url}}">{{title}}</a>
+                {{/each}} 
+              </div>
+            </div>
+          </div>
+        {{/if}}
+      </section>
+    </div> <!-- end col -->
+  </div> <!-- end row -->
+</div> <!-- end container -->

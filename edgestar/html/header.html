@@ -1,0 +1,78 @@
+<header class="main-hc-header">
+   <div class="container-fluid container">
+      <div class="col-xs-12 col-sm-4">
+          <div class="logo">
+          {{#link 'help_center'}}
+            <img class="img-responsive" src="{{logo_url}}" alt="{{t 'logo'}}">
+          {{/link}}
+        </div>
+      </div>  
+      <div class="col-xs-12 col-sm-8">
+        <div class="pull-right text-right top-header">
+           <!-- <label class="status"> Choose Your Language</label> -->
+            {{#if alternative_locales}}
+              <div class="dropdown language-selector btn" aria-haspopup="true">
+                <a class="dropdown-toggle">
+                  {{current_locale.name}}
+                </a>
+                <span class="dropdown-menu dropdown-menu-end" role="menu">
+                  {{#each alternative_locales}}
+                    <a href="{{url}}" dir="{{direction}}" rel="nofollow" role="menuitem">
+                      {{name}}
+                    </a>
+                  {{/each}}
+                </span>
+              </div>
+            {{/if}}
+          {{link 'new_request' class='submit-a-request btn'}}
+          {{user_info}}
+        </div>
+      </div>  
+   </div>
+</header>
+
+<div class="navigation">
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+      
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li>
+              {{#link 'help_center'}} Home {{/link}}
+            </li>
+            <li>
+              <a href="https://support.edgestar.com/hc/en-us/articles/209990513">
+                Parts &amp; Accessories
+              </a>
+            </li>
+            <li>
+              <a href="https://support.edgestar.com/hc/en-us/articles/208476766">
+                Product Registration
+              </a>
+            </li>
+            <li>
+              <a href="https://support.edgestar.com/hc/en-us/articles/211773963">
+                Where To Buy
+              </a>
+            </li>
+          </ul>       
+        </div><!-- /.navbar-collapse -->
+      </div> <!-- / end col -->
+      </div>
+      
+    </div> <!-- /.container --> 
+  </nav>
+</div>

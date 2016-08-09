@@ -1,0 +1,1456 @@
+////////////////////////////
+// VARIABLES
+////////////////////////////
+
+$color_1: #fff
+$color_2: #fff
+$color_3: #fff
+$color_4: #fff
+$color_5: #fff
+$color_6: #fff
+
+////////////////////////////
+// BEGIN SASS
+////////////////////////////
+
+html, body, div, span, h1, h2, h3, h4, a, p, img, i, ol, ul, li, textarea, button, input
+  margin: 0
+  padding: 0
+  outline: 0
+
+body
+  font-family: 'Open Sans', sans-serif !important
+
+img, iframe
+  display: inline-block
+  border: none
+  max-width: 100%
+
+a
+  background: transparent
+  text-decoration: none
+
+body a
+  text-decoration: none
+  color: $color_1
+  &:hover, &:focus
+    text-decoration: none
+    color: $color_1
+
+h3
+  font-size: 1.3em
+  font-weight: 600
+
+ul li
+  list-style: none
+
+body
+  .btn
+    &:hover, &:focus
+      color: #fff
+  pre
+    white-space: normal
+
+main
+  min-height: 400px
+
+////////////////////////////
+// RESET CSS END
+// HEADER START
+////////////////////////////
+
+.top-header .language-selector
+  display: inline-block
+
+#user .with-image
+  padding: 2px 5px
+
+.top-header a.dropdown-toggle, #user .user-name, .top-header .dropdown-toggle:after
+  color: #fff
+
+body .nav > li > a
+  &:hover, &:focus
+    background-color: transparent
+
+span.icons
+  background-color: $color_1
+  padding: 20px 1px
+  display: inherit
+  text-align: center
+  position: relative
+  font-size: 2.3em
+  border-radius: 10px
+  &:after
+    content: "" // \f0da
+    font-family: 'FontAwesome'
+    position: absolute
+    right: -10px
+    margin-top: 6px
+    color: $color_1
+  img
+    max-width: 60px
+
+.help-manual .col-xs-9 h4
+  margin-top: 0
+
+.home-section
+  padding-top: 50px
+
+.section.col-md-6
+  padding-left: 0
+  padding-top: 10px
+
+p
+  &:empty
+    display: none
+  &.description
+    margin-top: 10px
+    margin-bottom: 0
+
+.section-subscribe
+  .dropdown-toggle:after
+    color: #fff
+  a.dropdown-toggle
+    margin-bottom: 10px
+
+.section-tree ul.article-list li
+  padding: 5px 12px
+  position: relative
+
+.section-subscribe span.dropdown-menu
+  left: -152px
+
+aside.article-sidebar.side-column ul li
+  padding: 3px 10px
+  position: relative
+
+.article-user-info
+  img
+    width: 50px
+    width: 50px
+    display: inline-block
+    vertical-align: middle
+    border-radius: 100%
+    margin-bottom: 5px
+  padding-bottom: 10px
+  color: #333
+  border-bottom: 1px solid #eee
+  margin-bottom: 20px
+  strong
+    color: #000
+    padding-left: 6px
+
+.article-page .col-md-8
+  padding-left: 0
+
+.article-body
+  overflow-x: auto
+  ul li
+    list-style-type: disc
+
+h1.article-head
+  display: inline-block
+
+.article-subscribe
+  display: inline-block
+  margin-top: 20px
+
+.article-body
+  ul, ol
+    padding-left: 20px
+
+.answer-text ul, .question-text ul, .answer-text ol, .question-text ol
+  padding-left: 20px
+
+.community-post-page .dropdown-toggle:before
+  content: "\2699"
+  font-size: 11px
+  font-family: "entypo"
+
+header.main-hc-header
+  background: #fff
+  padding: 10px 0
+
+.navigation
+  background: $color_1
+  overflow: hidden
+  .container
+    padding: 0
+
+.navbar-collapse
+  padding: 0
+
+.nav li
+  a
+    color: #fff
+    text-transform: uppercase
+    font-weight: 500
+    letter-spacing: 1px
+    padding: 15px 40px 15px 15px
+  &:hover a, &.active a, a:focus
+    color: $color_1
+
+.navbar
+  margin-bottom: 0
+
+.navbar-toggle
+  border-radius: 0
+  padding: 14px 10px
+
+label
+  font-weight: 600
+  font-size: 1.08em
+
+.header-bg
+  padding: 110px 0
+
+.logo
+  padding: 15px 0
+
+.container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse
+  margin: 0
+
+.search-form
+  margin: 30px 0
+
+input#query
+  background: #fff
+  border: solid #3b3b3b
+  border-width: 2px 0 2px 2px
+  color: #8d8c8c
+  font-size: 2.09em
+  height: 60px
+  margin: 0
+  padding: 0 0 0 5%
+  width: 90%
+  border-radius: 50px 0 0 50px
+  font-weight: 300
+
+form.search input[type="submit"]
+  border: 2px solid #3b3b3b
+  cursor: pointer
+  height: 60px
+  margin: 0 0 0 -4px
+  vertical-align: top
+  width: 10%
+  border-radius: 0 50px 50px 0
+  text-indent: -9999px
+
+.help-manual li
+  overflow: hidden
+  margin-bottom: 50px
+  h4 a
+    color: $color_1
+    font-weight: 700
+  p
+    padding: 10px 0
+    color: #797979
+
+section.promoted-articles h3
+  color: $color_1
+  font-size: 1.3em
+  font-weight: 600
+  margin-top: 0
+
+.question ol
+  padding-left: 20px
+
+.promoted-articles ul
+  padding-left: 20px
+  li
+    padding: 10px 0
+    color: #797979
+    font-size: 1.08em
+    list-style-type: decimal
+
+.question ol li a, .promoted-articles ul li a
+  color: $color_1
+  font-size: 0.95em
+  font-weight: 500
+
+.dropdown-menu
+  padding: 0
+  min-width: 125px
+  li
+    margin-bottom: 0
+    a
+      padding: 2px
+
+footer.main-footer
+  background: #fff
+  overflow: hidden
+  color: $color_1
+  margin-top: 30px
+
+.main-footer .container .col-md-12
+  padding: 0
+
+footer
+  &.main-footer
+    h3
+      font-size: 1.4em
+      margin-bottom: 0
+    .follow-us ul
+      margin-top: 15px
+  .links-container ul
+    padding: 20px 0
+    li
+      padding: 10px 0
+
+.about ul, .product ul, .contact-us ul
+  padding-top: 15px
+
+.about ul li, .product ul li, .contact-us ul li
+  list-style: none
+
+.about ul li a, .product ul li a, .contact-us ul li a
+  font-weight: 300
+  font-size: 1.08em
+  text-transform: capitalize
+  text-decoration: none
+  color: $color_1
+
+.follow-us ul li
+  display: inline-block
+  width: 35px
+  height: 35px
+  border-radius: 100%
+  background-color: #fff
+  margin-bottom: 3px
+  a
+    font-size: 1.5em
+    padding: 2px 6px
+    display: inline-block
+    color: #000
+    &.facebook
+      padding-left: 11px
+    &.twitter
+      padding-left: 8px
+    &.linked
+      padding-left: 9px
+
+.btn
+  background: $color_1
+  color: #fff
+  display: inline-block
+
+::-moz-placeholder
+  color: #8d8c8c
+  opacity: 1
+
+.page-heading
+  color: #5b5b5b
+  font-size: 1.33em
+  padding: 0px 15px 20px
+  font-weight: 500
+
+.breadcrum-wrapper
+  background: color_5
+  margin-bottom: 20px
+
+.breadcrumbs
+  margin-bottom: 0
+  color: #808080
+  padding: 15px 0
+  font-size: 1em
+  li
+    display: inline-block
+  > li
+    + li:before
+      color: #5b5b5b
+      content: "|"
+      padding: 0 2px
+    a
+      color: #5b5b5b
+
+// search result start
+
+.section
+  h3
+    color: $color_1
+    padding: 0 0 5px
+    font-size: 1.3em
+    font-weight: 600
+    margin: 0
+    display: inline-block
+  li a
+    color: #5b5b5b
+
+.search-results-column
+  width: 100%
+
+.search-results h1
+  border-bottom: 1px solid #eee
+  border-top: 1px solid #eee
+  font-size: 1.4em
+  font-weight: 400
+  padding: 21px 0
+
+h2.search-results-subheading
+  font-size: 1.4em
+
+.search-results-subheading-link
+  color: #495c79
+  float: right
+  font-size: 16px
+  margin-top: -4%
+
+.search-result
+  border-bottom: 1px solid #ececec
+  padding: 15px 0
+
+.search-result-link
+  color: $color_1
+  font-size: 1.2em
+  &:hover
+    color: $color_1
+    font-size: 1.2em
+
+.search-result-description
+  color: #444444
+  font-size: 1.1em
+
+.search-result-heading
+  font-size: 1.9em
+  font-weight: 400
+  color: $color_1
+  font-size: 1.4em
+  font-weight: 600
+  padding: 0 0 20px
+
+p.copyright
+  float: right
+  padding-bottom: 10px
+  display: inline-block
+
+input#request_subject
+  width: 100%
+
+label.status
+  color: #fff
+
+.search-result-votes
+  background: $color_1
+  border-radius: 2px
+  color: #fff
+  display: inline-block
+  line-height: 1
+  margin-left: 5px
+  padding: 4px 5px
+  position: relative
+  top: -2px
+  &:before
+    content: "\1F44D"
+    font-family: "entypo"
+    margin-right: 3px
+
+ul
+  &.attachment-list li:before, &.attachments li:before
+    content: "\1F4CE"
+    font-family: entypo
+    margin-right: 2px
+
+.article-attachments ul.attachments li:first-child
+  padding-top: 20px
+
+///////////////////////////////////////
+// Search result end 
+// Contributions Page & Following Page
+///////////////////////////////////////
+
+.my-activities-header
+  border-bottom: 1px solid #eeeeee
+  margin-bottom: 25px
+  padding: 25px 0
+  background: #fff
+  .breadcrumbs li
+    &:first-child, &::before
+      display: none
+    color: #000000
+    font-size: 20px
+    font-weight: normal
+
+.my-activities-nav
+  margin-bottom: 50px
+  margin-top: 2%
+
+.nav-bordered li, .nav-spaced li
+  display: inline-block
+  font-weight: bold
+  background: transparent
+
+.nav li a, .nav-bordered li a, .nav-spaced li a, .community-nav li a, .side-column a, .main-column a
+  font-weight: normal
+
+.nav-bordered li + li
+  border-color: #eeeeee
+  border-style: solid
+  border-width: 0 0 0 1px
+  margin: 0 0 0 30px
+  padding: 0 0 0 30px
+
+.my-activities-nav ul, .my-activities-sub-nav ul, ul.comment-list
+  padding-left: 0
+
+.my-activities-sub-nav
+  margin-bottom: 15px
+
+.my-activities-table
+  overflow-x: auto
+
+.nav-spaced li + li
+  margin: 0 0 0 40px
+
+table
+  border-collapse: collapse
+  text-align: left
+  width: 100%
+
+th
+  border-width: 1px 0
+  color: #bebebe
+  font-size: 11px
+  font-weight: normal
+  white-space: nowrap
+
+body
+  td, th
+    border-color: #dadada
+    border-style: solid
+    padding: 12px
+
+td
+  border-width: 0 0 1px
+
+/////////////////////////////
+// Contributions & Following Page End 
+// Request list page start 
+/////////////////////////////
+
+.request-table-toolbar
+  display: table
+  padding: 8px
+  width: 100%
+  box-shadow: 4px 3px 0px 1px #efefef
+  background: $color_1
+
+.requests-search
+  border-radius: 20px
+  outline: medium none
+  padding: 6px 15px
+  border: 1px solid #efefef
+
+.request-table-filters
+  display: table-cell
+  text-align: right
+  label
+    color: #fff
+    &::before
+      content: " "
+      display: inline-block
+      width: 25px
+
+#request-status-select
+  border: 1px solid #efefef
+  padding: 6px 5px
+  border-radius: 30px
+  outline: none
+
+.reply-form
+  padding-top: 3%
+
+/////////////////////////////
+// Request list page end 
+// Request page 
+/////////////////////////////
+
+.request-id, .comment-published
+  color: #bebebe
+
+.comment-list
+  margin-bottom: 25px
+  > *:first-child
+    border-top: 1px solid #eeeeee
+
+.comment, .comment-form
+  display: table
+  table-layout: fixed
+  width: 100%
+
+.comment-list > *
+  border-bottom: 1px solid #eeeeee
+  padding: 25px 0
+
+.comment-avatar
+  position: relative
+  width: 85px
+
+.comment > *, .comment-form > *
+  display: table-cell
+  vertical-align: top
+
+.comment-avatar img
+  border-radius: 3px
+  max-height: 65px
+  max-width: 65px
+
+.comment-published
+  &::before
+    content: " "
+    display: inline-block
+    width: 5px
+  color: #bebebe
+  border: 1px solid rgba(0, 0, 0, 0)
+  float: right
+  font-size: 11px
+  padding: 1px 5px
+
+.comment-pending, .comment-official
+  border: 1px solid rgba(0, 0, 0, 0)
+  float: right
+  font-size: 11px
+  padding: 1px 5px
+
+.comment-form textarea
+  border-radius: 2px 2px 0 0
+  border-width: 1px
+
+textarea
+  width: 100%
+  height: 100px
+  padding: 7px 10px
+  resize: vertical
+
+.comment-attachments
+  margin-top: -1px
+
+.upload-dropzone
+  border: 1px solid #e7e7e7
+  font-size: 12px
+  overflow: hidden
+  position: relative
+  text-align: center
+  background: #fff
+  input[type="file"]
+    cursor: pointer
+    font-size: 250px
+    height: 100%
+    opacity: 0
+    position: absolute
+    right: 0
+    top: 0
+  span
+    &::before
+      content: ""
+      font-family: "entypo"
+      font-size: 30px
+      margin-right: 5px
+      position: relative
+      top: -2px
+      vertical-align: middle
+    color: #d1d1d1
+    display: inline-block
+
+.upload-pool
+  margin: 0
+  overflow: hidden
+  padding: 0
+
+.main-column
+  width: 100%
+
+.side-column [role=button]
+  background: $color_1
+  color: #fff
+  padding: 10px
+
+.request-details
+  border: 1px solid #eee
+  border-radius: 3px
+  font-size: 12px
+  margin: 0 0 30px
+  padding: 15px 20px
+  dt ~ dt
+    font-weight: bold
+    margin-top: 15px
+  dd
+    margin: 2px 0 0
+    word-wrap: break-word
+
+.request-status
+  border-radius: 3px
+
+.request-open
+  background: #59BBE0
+
+.request-answered
+  background: #F5CA00
+
+.request-solved
+  background: #78A300
+
+section.main-column > h1
+  font-size: 1.4em
+
+.label
+  border-radius: 20px
+  display: inline-block
+  font-size: 10px
+  text-transform: uppercase
+  white-space: nowrap
+
+.request-status
+  border-radius: 20px
+  display: inline-block
+  font-size: 10px
+  text-transform: uppercase
+  white-space: nowrap
+  padding: 5px 10px
+  color: #fff
+  font-weight: 600
+
+button, [type="button"], [type="submit"]
+  border: 1px solid #dddddd
+  border-radius: 0
+  cursor: pointer
+  display: inline-block
+  padding: 5px 10px
+  position: relative
+  vertical-align: middle
+  white-space: nowrap
+
+header button, [role="button"], [type="button"], [type="submit"]
+  border: 0
+
+h1.subject-head
+  font-size: 1.6em
+  padding: 25px 0
+  font-weight: 600
+
+/////////////////////////////
+// Request page end 
+// Error page start 
+/////////////////////////////
+
+.error-page
+  text-align: center
+  padding-top: 4%
+  min-height: 400px
+  a
+    color: #353535
+    font-weight: 500
+    padding: 10px
+    box-shadow: 0px 5px 5px 0px #EBEBEB
+    transition: all 0.4s ease
+    &:hover, &:active, &:focus
+      background: transparent
+      border: 1px solid
+      transition: all 0.4s ease
+  > p
+    padding-bottom: 3%
+    font-weight: 600
+    max-width: 350px
+    margin: 0 auto
+  h2
+    font-size: 1.2em
+    padding: 15px 0
+
+/////////////////////////////
+// Error page end 
+// New Request page starts 
+/////////////////////////////
+
+.form
+  max-width: 600px
+  margin-top: 20px
+
+.form-field
+  + .form-field
+    margin-top: 25px
+  label
+    display: block
+    font-weight: 400
+    margin-bottom: 10px
+    margin-top: 10px
+    font-size: 1.1em
+
+.form footer
+  margin-top: 20px
+  text-align: right
+  background: transparent
+
+.answer-form-controls input[type="submit"], .comment-form input[type="submit"]
+  border-color: rgba(0, 0, 0, 0)
+  color: #ffffff
+  padding: 10px 20px
+  background-color: $color_1
+
+footer input[type="submit"], form footer a
+  background: $color_1
+  padding: 0 26px
+  font-size: 1.2em
+  border-radius: 3px
+  float: left
+  color: #fff
+
+footer input[type="submit"]
+  min-height: 43px
+
+.form footer
+  border-top: 0
+
+.comment-header
+  background: none
+
+footer.comment-footer
+  overflow: visible
+
+.footer-navigation
+  background: $color_1
+  color: #fff
+  overflow: hidden
+  padding: 10px 0
+  a
+    color: color_3
+
+.comment-form input[type="submit"]
+  margin-top: 10px
+  float: right
+  font-size: 0.9em
+  background-color: $color_1
+
+form footer a
+  color: #fff
+  padding: 9px 25px
+  vertical-align: middle
+  margin: 0 2px
+  &:hover, &:focus
+    color: #fff
+
+.form input
+  height: 35px
+  border-radius: 0
+  border: 1px solid #e7e7e7
+  padding: 0px 10px
+
+.form-field #request_description
+  border-color: #e7e7e7
+  margin-bottom: 10px
+  border-radius: 0
+
+nav.pagination
+  margin: 0
+  ul li
+    background: $color_1
+    padding: 4px 10px
+    box-shadow: 4px 5px 4px 2px #efefef
+    display: inline-block
+    a
+      font-weight: 500
+      color: #fff
+
+h1.page-header
+  font-size: 1.8em
+  color: #555
+  border-color: transparent
+  margin: 0
+  padding-bottom: 0
+
+///////////////////////////////////
+// New Request page end 
+// Community page starts 
+///////////////////////////////////
+
+.clearfix
+  &::before, &::after
+    content: " "
+    display: table
+  &::before
+    content: ""
+    display: table
+    line-height: 0
+  &::after
+    content: ""
+    display: table
+    line-height: 0
+    clear: both
+
+.community-heading
+  font-size: 18px
+  margin-top: 4%
+  width: 100%
+
+.community-nav
+  margin-bottom: 0px
+  padding: 25px 0px 25px 0
+  li
+    display: inline-block
+    font-weight: bold
+    padding-right: 30px
+    + li
+      border-left: 1px none #eeeeee
+      padding-left: 30px
+    a
+      font-weight: normal
+
+.topic-header, .question-header
+  border-bottom: 1px solid #eeeeee
+  display: table
+  padding-bottom: 10px
+
+.post-page-question
+  padding-bottom: 25px
+  margin-bottom: 20px
+
+.topic-heading, .question-heading, .answer-list-heading
+  font-size: 13px
+  font-weight: bold
+  width: 100%
+
+.topic-header > *, .question-header > *
+  display: table-cell
+  vertical-align: middle
+
+.topic-header .topic-meta, .question-header .question-meta
+  padding: 0 15px
+  white-space: nowrap
+
+.question-meta, .answer-meta, .topic-meta
+  color: #cccccc
+  font-size: 11px
+
+.question, .answer
+  padding: 20px 0
+  position: relative
+
+.question-topic-list
+  margin: -20px 0 30px
+  li
+    display: inline-block
+    margin: 10px 10px 0 0
+  a
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.02)
+    border-radius: 5px
+    color: #cccccc
+    display: inline-block
+    font-size: 11px
+    padding: 7px 15px
+
+.vote
+  display: table-cell
+  margin-left: 15px
+  margin-right: 10px
+  min-width: 95px
+  vertical-align: top
+
+.vote-sum
+  font-size: 15px
+  font-weight: bold
+  min-width: 60px
+  padding-left: 10px
+  text-align: center
+  display: inline-block
+  vertical-align: middle
+
+.vote-controls
+  display: inline-block
+  vertical-align: middle
+  border-radius: 5px
+
+.vote-up::before
+  content: "<"
+
+.vote-down::before
+  content: ">"
+
+.vote-controls:hover a
+  background: none repeat scroll 0 0 #ffffff
+  border-color: #a6a6a6
+  color: #bbbbbb
+
+.question-avatar-agent::after, .answer-avatar-agent::after
+  background-color: rgba(0, 0, 0, 0)
+  background-repeat: no-repeat
+  background-size: 14px auto
+  content: " "
+  height: 15px
+  left: 30px
+  position: absolute
+  top: 30px
+  width: 15px
+
+.question-avatar, .answer-avatar
+  display: table-cell
+  margin-right: 10px
+  min-width: 50px
+  position: relative
+  vertical-align: top
+
+.question-avatar img, .answer-avatar img
+  border-radius: 3px
+  max-height: 38px
+  max-width: 38px
+
+.question-body, .answer-body, .answer-official-body
+  display: table-cell
+  vertical-align: top
+  width: 100%
+
+.question-title, .topic-title
+  font-size: 15px
+  margin: -3px 0 5px
+
+.markdown
+  line-height: 1.7
+  word-wrap: break-word
+
+.question-body .question-meta, .answer-body .answer-meta, .answer-official-body .answer-meta
+  float: left
+
+.topic-meta span + span::before, .question-meta span + span::before, .answer-meta span + span::before
+  content: "•"
+  font-size: 10px
+  margin: 0 10px
+
+.answer-form
+  margin: 30px 0 0 95px
+
+.sub-nav form
+  display: none
+
+.answer-form-controls
+  margin-top: 10px
+  text-align: right
+  .pull-left
+    float: left
+  input[type="submit"]
+    margin-left: 15px
+
+ul.share
+  display: inline
+
+.accordion-topics .panel-title > a, .community-accordion .panel-title > a
+  color: #888
+  display: flex
+  vertical-align: middle
+  width: 100%
+
+.accordion-topics .glyphicon, .community-accordion .glyphicon
+  font-size: 25px
+  display: table
+  float: none
+  height: 30px
+  width: 30px
+  top: 5px
+
+.accordion-topics .heading, .community-accordion .heading
+  display: table-cell
+  float: none
+  line-height: 24px
+  overflow: hidden
+  padding: 8px 0 4px
+  position: relative
+  text-align: left
+  vertical-align: middle
+
+.topic-controls, .question-controls, .answer-controls
+  float: right
+  font-size: 11px
+
+.topic-meta span + span::before, .question-meta span + span::before, .answer-meta span + span::before
+  content: "•"
+  font-size: 10px
+  margin: 0 10px
+
+.question-share, .answer-share
+  position: relative
+
+.share-label
+  cursor: pointer
+  + .share
+    &::before
+      border-bottom: 7px solid #cccccc
+      border-left: 7px solid rgba(0, 0, 0, 0)
+      border-right: 7px solid rgba(0, 0, 0, 0)
+      margin-left: -6px
+      top: -7px
+      content: ""
+      display: inline-block
+      left: 50%
+      position: absolute
+    &::after
+      content: ""
+      display: inline-block
+      left: 50%
+      position: absolute
+      border-bottom: 6px solid #ffffff
+      border-left: 6px solid rgba(0, 0, 0, 0)
+      border-right: 6px solid rgba(0, 0, 0, 0)
+      margin-left: -5px
+      top: -6px
+    &::before, &::after
+      content: ""
+      display: inline-block
+      left: 50%
+      position: absolute
+  &[aria-selected="false"] + .share
+    display: none
+  + .share
+    background: none repeat scroll 0 0 #ffffff
+    border: 1px solid #dddddd
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15)
+    left: 50%
+    line-height: 70px
+    margin: 10px 0 0 -75px
+    position: absolute
+    text-align: center
+    top: 100%
+    white-space: nowrap
+    width: 175px
+    z-index: 1
+
+.share
+  li
+    display: inline-block
+  a
+    display: inline-block
+    &::before
+      border-radius: 0
+      color: #ffffff
+      display: inline-block
+      font-family: "entypo"
+      text-align: center
+      width: 100%
+
+.share-facebook::before
+  content: ""
+  background: #3b5998
+
+.share-twitter::before
+  content: ""
+  background: #00ACED
+
+.share-linkedin::before
+  content: ""
+  background: #007BB6
+
+.share-googleplus::before
+  content: ""
+  background: #DD4A3A
+
+.share
+  a
+    height: 30px
+    line-height: 30px
+    overflow: hidden
+    vertical-align: middle
+    width: 30px
+  li, a
+    display: inline-block
+    margin-bottom: 3%
+    padding: 00px
+
+input[type="checkbox"] + label
+  display: inline-block
+  margin-left: 5px
+
+label
+  font-size: 12px
+
+.community-sub-nav
+  padding: 15px 0
+  position: relative
+  width: 100%
+  a
+    font-weight: normal
+
+.question-list a
+  font-weight: normal
+
+.community-sub-nav li
+  display: inline-block
+  font-weight: bold
+  padding-right: 15px
+  + li
+    padding-left: 15px
+
+.community-nav li:last-child
+  border: 0 none
+  float: right
+  margin: 0
+  padding: 0
+  position: relative
+  top: -5px
+  a::before
+    content: "✎"
+    font-family: "entypo"
+    font-size: 14px
+    margin-right: 10px
+    vertical-align: middle
+
+body .topic
+  padding: 20px 30px 20px 0
+
+.question-meta, .answer-meta, .topic-meta
+  color: #cccccc
+  font-size: 11px
+
+form#new_question
+  padding: 30px 10px
+  input
+    margin-bottom: 2px
+  textarea
+    margin-bottom: 15px
+
+h2.request-heading
+  font-size: 1.7em
+  text-transform: capitalize
+
+.community-temp > .clearfix
+  padding: 0 0 0 30px
+
+section.related-questions
+  padding: 10px 2px 27px 25px
+  line-height: 1.8em
+  border: 1px solid #efefef
+  margin-top: -6px
+  ul
+    padding-left: 0
+
+.community-sub-nav ul, ul.question-list
+  padding-left: 0
+
+body .community-sub-nav ul
+  margin: 0
+
+textarea#answer_body
+  height: 100px
+  padding: 12px
+  border: 1px solid #efefef
+
+footer > a:hover
+  color: #fff
+
+.clearfix > h1, .form-column > h1
+  font-size: 1.8em
+
+.community-nav > ul, .community-sub-nav > ul
+  border-bottom: 1px solid #efefef
+  margin: 0px 0px 0 0px
+  padding: 0px 0 20px 0
+
+form#new_question .form-field
+  input, textarea
+    margin-bottom: 5px
+    min-height: 35px
+    border-radius: 0
+  input
+    min-height: 40px
+    width: 100%
+
+.form-field input
+  min-height: 40px
+  width: 100%
+
+body
+  textarea#question_details, #request_description
+    min-height: 120px
+    border: 1px solid #e7e7e7
+
+.nesty-input
+  margin: 0
+  border-color: #e7e7e7
+  border-radius: 0
+  min-height: 40px
+  &:after
+    color: #424242
+    padding-top: 4px
+
+.searchbox
+  margin-top: 12px
+  > label
+    font-size: 1.1em
+
+.searchbox-suggestions
+  ul
+    padding-left: 0px
+    li
+      padding: 3px 0
+      a
+        color: #333
+        font-weight: 500
+        font-size: 0.9em
+  padding: 9px 0 0 10px
+  border: 1px solid #e7e7e7
+  border-radius: 3px
+  background: #fff
+
+h3.related-questions-heading
+  text-transform: capitalize
+
+.answer-text ul li, .question-text ul li
+  list-style-type: disc
+
+.community-post-list-page
+  padding-bottom: 3px
+
+.answer-text.markdown pre, .question-text pre
+  white-space: normal
+
+.question-controls span.dropdown-menu, .answer-controls span.dropdown-menu
+  left: -125px
+  top: 25px
+
+.community-post-page .question-controls .dropdown-toggle:before
+  padding-right: 3px
+
+/////////////////////////////////
+// Community page ends 
+/////////////////////////////////
+
+.article-vote
+  border-top: 1px solid #eee
+  border-bottom: 1px solid #eee
+  padding: 15px 0
+  margin: 20px 0
+
+textarea
+  border: 1px solid #eee
+
+a
+  &.article-vote-up:before
+    content: "Yes"
+  &.article-vote-down:before
+    content: "No"
+
+.article-vote-controls
+  a
+    color: #fff
+    font-size: 0.9em
+    font-weight: 600
+    background-color: $color_1
+    padding: 9px
+    &:hover, &:focus
+      color: #fff
+  padding: 8px 2px
+  display: inline-block
+
+span.article-vote-question
+  font-size: 1.2em
+
+section.article-comments > h2
+  font-size: 1.5em
+
+a.see-all-articles
+  color: #fff
+  padding: 7px 15px
+  transition: all 0.4s ease
+  &:hover, &:before
+    color: #000
+    background: #fff
+    border: 1px solid
+    transition: all 0.4s ease
+
+.question-controls a + a, .answer-controls a + a
+  margin-left: 15px
+
+img#user-avatar
+  height: 30px
+  width: 30px
+  border-radius: 100%
+
+#user
+  #user-dropdown
+    left: inherit
+  display: inline-block
+
+a.submit-a-request
+  display: inline-block
+
+#user #user-name
+  max-width: 50px
+
+body a.submit-a-request.btn
+  padding: 7px 8px
+
+.my-activities-table > p
+  padding: 20px 0
+
+.comment-body, .answer-text
+  word-wrap: break-word
+  word-break: break-word
+
+.con-table table
+  tbody tr td + td, thead tr th + th
+    text-align: center
+
+ul.article-list li a
+  color: #3b3b3b
+
+.comment-body > p
+  padding-top: 9px
+
+footer.comment-footer
+  background: transparent
+  margin-top: 0
+  padding: 0
+  box-shadow: 0px 0px 2px 1px #fff
+
+.comment-footer .comment-actions
+  float: left
+
+.community-temp .sub-nav
+  background: transparent
+
+.comment-page form .comment-form .comment-container #request_comment_body
+  border-color: #424242
+
+.comment-mark-as-solved
+  padding-top: 15px
+  display: inline-block
+
+.devices ul li:before, .faqs ul li:before, .account ul li:before, .section li:before, .article-sidebar ul li:before
+  content: "\f0da"
+  font-family: 'Fontawesome'
+  color: $color_1
+  position: absolute
+  left: 0
+
+@media all and (max-width: 480px)
+  .request-table-filters
+    display: inline-block
+    margin: 10px -15px
+  form.request-table-toolbar input
+    width: 100%
+  .top-header a, span#user-name
+    font-size: 0.9em
+  .help-manual .col-xs-3
+    padding: 0
+  body
+    form.search input
+      &#query
+        width: 70%
+      &[type="submit"]
+        width: 30%
+    span.icons:after
+      content: ""
+  .nav-spaced li + li
+    margin: 0
+  body
+    .nav-spaced li, .nav-bordered li
+      padding-right: 10px !important
+  .nav-bordered li + li
+    border: 0
+    padding: 0
+    margin: 0
+
+@media all and (max-width: 767px)
+  .side-column.col-md-4
+    margin-top: 30px
+  .top-header .language-selector, body a.submit-a-request.btn
+    margin-bottom: 2px
+  form.search input
+    &#query
+      width: 80%
+    &[type="submit"]
+      width: 20%

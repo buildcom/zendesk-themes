@@ -1,0 +1,77 @@
+.my-activities-header {
+  border-bottom: 1px solid #eeeeee;
+  margin-bottom: 25px;
+  padding: 25px 0;
+  background: #fff;
+  .breadcrumbs li {
+    color: #000000;
+    font-size: 20px;
+    font-weight: normal;
+    &:first-child, &::before {
+      display: none;
+    }
+  }
+}
+
+.my-activities-nav {
+  margin-bottom: 50px;
+  margin-top: 2%;
+}
+
+.nav-bordered li, .nav-spaced li {
+  display: inline-block;
+  font-weight: bold;
+  background: transparent;
+}
+
+.nav li a, .nav-bordered li a, .nav-spaced li a,
+.community-nav li a, .side-column a, .main-column a {
+  font-weight: normal;
+}
+
+.nav-bordered li + li {
+  border-color: $complementary-d;
+  border-style: solid;
+  border-width: 0 0 0 1px;
+  margin: 0 0 0 30px;
+  padding: 0 0 0 30px;
+}
+
+.my-activities-nav ul, .my-activities-sub-nav ul, ul.comment-list {
+  padding-left: 0;
+}
+
+.my-activities-sub-nav {
+  margin-bottom: 15px;
+}
+
+.my-activities-table {
+  overflow-x: auto;
+}
+
+.nav-spaced li + li {
+  margin: 0 0 0 40px;
+}
+
+table {
+  border-collapse: collapse;
+  text-align: left;
+  width: 100%;
+}
+
+th {
+  border-width: 1px 0;
+  color: #bebebe;
+  font-size: 11px;
+  font-weight: normal;
+  white-space: nowrap;
+  border-width: 0 0 1px;
+}
+
+body {
+  td, th {
+    border-color: #dadada;
+    border-style: solid;
+    padding: 12px;
+  }
+}

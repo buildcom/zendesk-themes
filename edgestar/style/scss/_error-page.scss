@@ -1,0 +1,27 @@
+.error-page {
+  text-align: center;
+  padding-top: 4%;
+  min-height: 400px;
+  a {
+    color: #353535;
+    font-weight: 500;
+    padding: 10px;
+    box-shadow: 0px 5px 5px 0px #EBEBEB;
+    transition: all 0.4s ease;
+    &:hover, &:active, &:focus {
+      background: transparent;
+      border: 1px solid;
+      transition: all 0.4s ease;
+    }
+  }
+  > p {
+    padding-bottom: 3%;
+    font-weight: 600;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+  h2 {
+    font-size: 1.2em;
+    padding: 15px 0;
+  }
+}

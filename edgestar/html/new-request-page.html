@@ -1,0 +1,61 @@
+<div class="breadcrumb-wrapper">
+  <div class="container">
+    <div class="col-xs-12 col-md-8">
+      {{breadcrumbs}}  
+    </div>
+    <div class="col-xs-12 col-md-4">
+      <div class="regular-search-wrapper">
+        {{search instant=true}}
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="col-xs-12">
+    <h1 class="page-header">
+      {{t 'submit_a_request'}}
+      {{#if follow_up}}
+      <span class="follow-up-hint">
+      {{follow_up}}
+      </span>
+      {{/if}}
+    </h1>
+    <hr>
+
+    <div id="tabbed-forms">
+      <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+          <a href="#form-1" role="tab" data-toggle="tab">Form 1</a>
+        </li>
+        <li class="">
+          <a href="#form-2" role="tab" data-toggle="tab">Form 2</a>
+        </li>
+        <li class="">
+          <a href="#form-3" role="tab" data-toggle="tab">Form 3</a>
+        </li>               
+      </ul>
+
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="form-1">
+          <p>
+            Brisket short loin ball tip pork belly ground round beef tail turducken porchetta alcatra short ribs t-bone. Alcatra biltong shankle pancetta venison ground round sirloin, tongue cupim ribeye cow pastrami pork chop meatloaf. Tenderloin t-bone fatback, shoulder beef cupim biltong landjaeger.
+          </p>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="form-2">
+          <p>
+            Alcatra biltong shankle pancetta venison ground round sirloin, tongue cupim ribeye cow pastrami pork chop meatloaf. Tenderloin t-bone fatback, shoulder beef cupim biltong landjaeger. Bacon ipsum dolor amet pastrami spare ribs ham hock, tri-tip shank boudin swine pork loin beef bacon pork belly turducken meatball. Sausage turkey beef, tri-tip turducken pancetta ham shankle cow strip steak. Ground round bresaola sirloin doner jowl chicken tail boudin. Ribeye porchetta meatball, filet mignon chuck pork prosciutto tenderloin. Brisket short loin ball tip pork belly ground round beef tail turducken porchetta alcatra short ribs t-bone. 
+          </p>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="form-3">
+          <p>
+            Bacon ipsum dolor amet pastrami spare ribs ham hock, tri-tip shank boudin swine pork loin beef bacon pork belly turducken meatball. Sausage turkey beef, tri-tip turducken pancetta ham shankle cow strip steak. Ground round bresaola sirloin doner jowl chicken tail boudin. Ribeye porchetta meatball, filet mignon chuck pork prosciutto tenderloin. Brisket short loin ball tip pork belly ground round beef tail turducken porchetta alcatra short ribs t-bone. Alcatra biltong shankle pancetta venison ground round sirloin, tongue cupim ribeye cow pastrami pork chop meatloaf. Tenderloin t-bone fatback, shoulder beef cupim biltong landjaeger. 1234
+          </p>
+        </div>
+      </div>
+        
+    </div> <!-- end tabbed-forms -->
+
+    {{chat}}
+
+  </div> <!-- end col -->
+</div> <!-- end container -->

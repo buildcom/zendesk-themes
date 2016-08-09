@@ -1,0 +1,91 @@
+@media all and (max-width: 480px) {
+  
+    .request-table-filters {
+      display: inline-block;
+      margin: 10px -15px;
+    }
+
+    form.request-table-toolbar input {
+      width: 100%;
+    }
+
+    .top-header a, span#user-name {
+      font-size: 0.9em;
+    }
+
+    .help-manual .col-xs-3 {
+      padding: 0;
+    }
+
+    body {
+      form.search input {
+        
+        &#query {
+          width: 70%;
+        }
+
+        &[type="submit"] {
+          width: 30%;
+        }
+      }
+
+      span.icons:after {
+        content: "";
+      }
+
+    .nav-spaced li + li {
+      margin: 0;
+    }
+    
+    .nav-spaced li, .nav-bordered li {
+      padding-right: 10px !important;
+    }
+
+    .nav-bordered li + li {
+      border: 0;
+      padding: 0;
+      margin: 0;
+    }
+  }
+}
+
+@media all and (max-width: 767px) {
+  
+  .side-column.col-md-4 {
+    margin-top: 30px;
+  }
+
+  .top-header .language-selector, body a.submit-a-request.btn {
+    margin-bottom: 2px;
+  }
+
+  form.search input {
+    
+    &#query {
+      width: 80%;
+    }
+
+    &[type="submit"] {
+      width: 20%;
+    }
+  }
+
+  .brand-logo {
+    padding: 8px 0;
+  }
+
+  .header-bg {
+    padding: 15px 0;
+  }
+
+  .navbar-toggle {
+    background: url("http://p4.zdassets.com/hc/theme_assets/1021718/200071026/menu-icon.png") no-repeat;
+    padding: 10px 18px;
+    margin: 15px 40px;
+  }
+
+  ul.nav.navbar-nav.menu {
+    padding: 0 15px;
+  }
+
+}

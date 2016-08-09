@@ -1,0 +1,292 @@
+.header-bg {
+   background: url("http://p4.zdassets.com/hc/theme_assets/1021718/200071026/header-v3.jpg") no-repeat;
+  background-position: center;
+}
+
+.header-bg {
+  padding: 15px 0;
+  background-color: $base-f;
+}
+
+.brand-logo {
+  padding: 20px 0;
+}
+
+.logo {
+  padding: 15px 0;
+}
+
+.top-header {
+  .language-selector {
+    display: inline-block;
+  }
+  a.dropdown-toggle, .dropdown-toggle:after {
+    color: $brand-a;  
+  }
+}
+
+#user {
+  .with-image {
+    padding: 2px 5px;
+  }
+  .user-name {
+    color: $brand-a;
+  }
+}
+
+body .nav > li > a {
+  &:hover, &:focus {
+    background-color: transparent;
+  }
+}
+
+span.icons {
+  background-color: $base-e;
+  padding: 20px 1px;
+  display: inherit;
+  text-align: center;
+  position: relative;
+  font-size: 2.3em;
+  border-radius: 10px;
+
+  img {
+    max-width: 60px;
+  }
+}
+
+.help-manual .col-xs-9 h4 {
+  margin-top: 0;
+}
+
+.home-section {
+  padding-top: 20px;
+}
+
+.section.col-md-6 {
+  padding-left: 0;
+  padding-top: 10px;
+}
+
+p {
+  
+  &:empty {
+    display: none;
+  }
+
+  &.description {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+}
+
+.section-subscribe {
+  
+  .dropdown-toggle:after {
+    color: #fff;
+  }
+
+  a.dropdown-toggle {
+    margin-bottom: 10px;
+  }
+}
+
+.section-tree ul.article-list li {
+  padding: 5px 12px;
+  position: relative;
+}
+
+.section-subscribe span.dropdown-menu {
+  left: -152px;
+}
+
+aside.article-sidebar.side-column ul li {
+  padding: 3px 10px;
+  position: relative;
+}
+
+.article-user-info {
+  padding-bottom: 10px;
+  color: #333;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 20px;
+  
+  img {
+    width: 50px;
+    width: 50px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 100%;
+    margin-bottom: 5px;
+  }
+  
+  strong {
+    color: #000;
+    padding-left: 6px;
+  }
+}
+
+.article-page .col-md-8 {
+  padding-left: 0;
+}
+
+.article-body {
+  overflow-x: auto;
+
+  ul li {
+    list-style-type: disc;
+  }
+}
+
+h1.article-head {
+  display: inline-block;
+}
+
+.article-subscribe {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.article-body {
+  ul, ol {
+    padding-left: 20px;
+  }
+}
+
+.answer-text ul, .question-text ul,
+.answer-text ol, .question-text ol {
+  padding-left: 20px;
+}
+
+.community-post-page .dropdown-toggle:before {
+  content: "\2699";
+  font-size: 11px;
+  font-family: "entypo";
+}
+
+header.main-hc-header {
+  background: #fff;
+  padding: 10px 0;
+}
+
+label {
+  font-weight: 600;
+  font-size: 1.08em;
+}
+
+.container > .navbar-header, .container-fluid > .navbar-header,
+.container > .navbar-collapse, .container-fluid > .navbar-collapse {
+  margin: 0;
+}
+
+.help-manual li {
+  overflow: hidden;
+  margin-bottom: 50px;
+  h4 a {
+    color: $brand-a;
+    font-weight: 700;
+  }
+  p {
+    padding: 10px 0;
+    color: #797979;
+  }
+}
+
+section.promoted-articles h3 {
+  color: $brand-a;
+  font-size: 1.3em;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+.question ol {
+  padding-left: 20px;
+}
+
+.promoted-articles ul {
+  padding-left: 20px;
+  li {
+    padding: 10px 0;
+    color: #797979;
+    font-size: 1.08em;
+    list-style-type: decimal;
+  }
+}
+
+.question ol li a, .promoted-articles ul li a {
+  color: $brand-a;
+  font-size: 0.95em;
+  font-weight: 500;
+}
+
+.dropdown-menu {
+  padding: 0;
+  min-width: 125px;
+  li {
+    margin-bottom: 0;
+    a {
+      padding: 2px;
+    }
+  }
+}
+
+.about ul, .product ul, .contact-us ul {
+  padding-top: 15px;
+}
+
+.about ul li, .product ul li, .contact-us ul li {
+  list-style: none;
+} 
+
+.about ul li a, .product ul li a, .contact-us ul li a {
+  font-weight: 300;
+  font-size: 1.08em;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: $brand-a;
+}
+
+.follow-us ul li {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  background-color: #fff;
+  margin-bottom: 3px;
+
+  a {
+    font-size: 1.5em;
+    padding: 2px 6px;
+    display: inline-block;
+    color: #000;
+
+    &.facebook {
+      padding-left: 11px;
+    }
+
+    &.twitter {
+      padding-left: 8px;
+    }
+
+    &.linked {
+      padding-left: 9px;
+    } 
+  }
+}
+
+.btn {
+  background: $brand-a;
+  color: #fff;
+  display: inline-block;
+}
+
+::-moz-placeholder {
+  color: #8d8c8c;
+  opacity: 1;
+}
+
+.page-heading {
+  color: #5b5b5b;
+  font-size: 1.33em;
+  padding: 0px 15px 20px;
+  font-weight: 500;
+}

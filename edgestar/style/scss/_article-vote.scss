@@ -1,0 +1,140 @@
+.article-vote {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: 15px 0;
+  margin: 0 0 20px;
+}
+
+textarea {
+  border: 1px solid #eee;
+}
+
+a {
+  &.article-vote-up:before {
+    content: "Yes";
+  }
+  &.article-vote-down:before {
+    content: "No";
+  }
+}
+
+.article-vote-controls {
+  margin: 15px 0;
+  a {
+    color: $base-a;
+    font-size: 0.9em;
+    font-weight: 600;
+    background-color: $brand-a;
+    display: inline-block;
+    padding: 10px 18px;
+    border-radius: 4px;
+    &:hover, &:focus {
+      color: $base-a;
+    }
+  }
+}
+
+span.article-vote-question {
+  font-size: 1.2em;
+}
+
+section.article-comments > h2 {
+  font-size: 1.5em;
+}
+
+a.see-all-articles {
+  color: $base-a;
+  padding: 7px 15px;
+  transition: all 0.4s ease;
+  &:hover, &:before {
+    color: #000;
+    background: $base-a;
+    border: 1px solid;
+    transition: all 0.4s ease;
+  }
+}
+
+.question-controls a + a, .answer-controls a + a {
+  margin-left: 15px;
+}
+
+img#user-avatar {
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+}
+
+#user {
+  #user-dropdown {
+    left: inherit;
+  }
+  display: inline-block;
+}
+
+a.submit-a-request {
+  display: inline-block;
+}
+
+#user #user-name {
+  max-width: 50px;
+}
+
+body a.submit-a-request.btn {
+  padding: 7px 8px;
+}
+
+.my-activities-table > p {
+  padding: 20px 0;
+}
+
+.comment-body, .answer-text {
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+.con-table table {
+  tbody tr td + td, thead tr th + th {
+    text-align: center;
+  }
+}
+
+ul.article-list li a {
+  color: #3b3b3b;
+}
+
+.comment-body > p {
+  padding-top: 9px;
+}
+
+footer.comment-footer {
+  background: transparent;
+  margin-top: 0;
+  padding: 0;
+  box-shadow: 0px 0px 2px 1px $base-a;
+}
+
+.comment-footer .comment-actions {
+  float: left;
+}
+
+.community-temp .sub-nav {
+  background: transparent;
+}
+
+.comment-page form .comment-form .comment-container #request_comment_body {
+  border-color: #424242;
+}
+
+.comment-mark-as-solved {
+  padding-top: 15px;
+  display: inline-block;
+}
+
+.devices ul li:before, .faqs ul li:before, .account ul li:before,
+.section li:before, .article-sidebar ul li:before {
+  content: "\f0da";
+  font-family: 'Fontawesome';
+  color: $brand-a;
+  position: absolute;
+  left: 0;
+}

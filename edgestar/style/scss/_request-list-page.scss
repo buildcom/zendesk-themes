@@ -1,0 +1,38 @@
+.request-table-toolbar {
+  display: table;
+  padding: 8px;
+  width: 100%;
+  box-shadow: 4px 3px 0px 1px $base-c;
+  background: $brand-a;
+}
+
+.requests-search {
+  border-radius: 20px;
+  outline: medium none;
+  padding: 6px 15px;
+  border: 1px solid $base-c;
+}
+
+.request-table-filters {
+  display: table-cell;
+  text-align: right;
+  label {
+    color: $base-a;
+    &::before {
+      content: " ";
+      display: inline-block;
+      width: 25px;
+    }
+  }
+}
+
+#request-status-select {
+  border: 1px solid $base-c;
+  padding: 6px 5px;
+  border-radius: 30px;
+  outline: none;
+}
+
+.reply-form {
+  padding-top: 3%;
+} 
