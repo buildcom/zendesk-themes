@@ -23,33 +23,64 @@
     <hr>
 
     <div id="tabbed-forms">
+
+      <!-- 
+
+      STEP 1/2
+
+      1) Add class "hidden" to li.
+      2) Remove class "active" if applicable / apply to another.
+
+      Show: 
+
+      <li class="active">
+        <a href="#service-request-form" role="tab" data-toggle="tab">Service Request Form</a>
+      </li>
+
+      Hide:
+
+      <li class="hidden">
+        <a href="#service-request-form" role="tab" data-toggle="tab">Service Request Form</a>
+      </li>
+
+      -->
+
       <ul class="nav nav-tabs" role="tablist">
         <li class="active">
-          <a href="#form-1" role="tab" data-toggle="tab">Form 1</a>
+          <a href="#service-request-form" role="tab" data-toggle="tab">Service Request Form</a>
         </li>
         <li class="">
-          <a href="#form-2" role="tab" data-toggle="tab">Form 2</a>
+          <a href="#diagnostic-tool" role="tab" data-toggle="tab">Diagnostic Tool</a>
         </li>
-        <li class="">
-          <a href="#form-3" role="tab" data-toggle="tab">Form 3</a>
-        </li>               
       </ul>
-
+      
+      <!-- FORMS DISPLAYED HERE -->
       <div class="tab-content">
-        <div role="tabpanel" class="tab-pane active" id="form-1">
-          <p>
-            Brisket short loin ball tip pork belly ground round beef tail turducken porchetta alcatra short ribs t-bone. Alcatra biltong shankle pancetta venison ground round sirloin, tongue cupim ribeye cow pastrami pork chop meatloaf. Tenderloin t-bone fatback, shoulder beef cupim biltong landjaeger.
-          </p>
+        <!-- 
+
+        STEP 2/2
+
+        1) Add class "hidden" to tab-pane.
+        2) Remove class "active" if applicable / apply to another.
+
+        Show: 
+
+        <div role="tabpanel" class="tab-pane active" id="service-request-form">
+          <iframe src="blah" frameborder="0"></iframe>
         </div>
-        <div role="tabpanel" class="tab-pane" id="form-2">
-          <p>
-            Alcatra biltong shankle pancetta venison ground round sirloin, tongue cupim ribeye cow pastrami pork chop meatloaf. Tenderloin t-bone fatback, shoulder beef cupim biltong landjaeger. Bacon ipsum dolor amet pastrami spare ribs ham hock, tri-tip shank boudin swine pork loin beef bacon pork belly turducken meatball. Sausage turkey beef, tri-tip turducken pancetta ham shankle cow strip steak. Ground round bresaola sirloin doner jowl chicken tail boudin. Ribeye porchetta meatball, filet mignon chuck pork prosciutto tenderloin. Brisket short loin ball tip pork belly ground round beef tail turducken porchetta alcatra short ribs t-bone. 
-          </p>
+
+        Hide:
+
+        <div role="tabpanel" class="tab-pane hidden" id="service-request-form">
+          <iframe src="blah" frameborder="0"></iframe>
         </div>
-        <div role="tabpanel" class="tab-pane" id="form-3">
-          <p>
-            Bacon ipsum dolor amet pastrami spare ribs ham hock, tri-tip shank boudin swine pork loin beef bacon pork belly turducken meatball. Sausage turkey beef, tri-tip turducken pancetta ham shankle cow strip steak. Ground round bresaola sirloin doner jowl chicken tail boudin. Ribeye porchetta meatball, filet mignon chuck pork prosciutto tenderloin. Brisket short loin ball tip pork belly ground round beef tail turducken porchetta alcatra short ribs t-bone. Alcatra biltong shankle pancetta venison ground round sirloin, tongue cupim ribeye cow pastrami pork chop meatloaf. Tenderloin t-bone fatback, shoulder beef cupim biltong landjaeger. 1234
-          </p>
+
+        -->
+        <div role="tabpanel" class="tab-pane active" id="service-request-form">
+          <script type="text/javascript" src="https://livingdirect.formstack.com/forms/js.php/esr_1"></script><noscript><a href="https://livingdirect.formstack.com/forms/esr_1" title="Online Form">Online Form - EdgeStar Service Request</a></noscript>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="diagnostic-tool">
+          <script type="text/javascript" src="https://livingdirect.formstack.com/forms/js.php/esr_2"></script><noscript><a href="https://livingdirect.formstack.com/forms/esr_1" title="Online Form">Online Form - EdgeStar Diagnostic Form</a></noscript>
         </div>
       </div>
         
