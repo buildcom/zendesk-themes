@@ -34,30 +34,14 @@
     <div class="col-xs-12 col-sm-8">
       <div class="row">
         {{#each categories}}
-          <div class="col-xs-12 col-sm-6">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <div class="panel-title">
-                  <a href="{{url}}">
-                    {{name}}
-                  </a> 
-                </div>
-              </div>
-              <div class="panel-body">
-                Description: {{description}}  
-              </div>
-              <div class="list-group">
-                {{#each sections}}
-                  <a href="{{url}}" class="list-group-item">
-                    <h5>{{name}}</h5>
-                  </a>
-                {{/each}}
-              </div>
-            </div>
+          <div class="col-xs-12 col-sm-6 text-center category-column">
+            <a class="home-section-card" href="{{url}}">
+              <i class="fa fa-comment home-section-icon"></i>
+              <h3>
+                {{name}}
+              </h3>
+            </a> 
           </div>
-          {{#is '@index % 2' '0'}}
-            <div class="clearfix"></div>
-          {{/is}}
         {{/each}}
       </div>
     </div> <!-- end col -->

@@ -1,14 +1,14 @@
 <header class="main-hc-header">
    <div class="container-fluid container">
-      <div class="col-xs-12 col-sm-4">
-          <div class="logo">
+      <div class="col-xs-12 col-sm-4 text-center">
+        <div class="logo">
           {{#link 'help_center'}}
-            <img class="img-responsive" src="{{logo_url}}" alt="{{t 'logo'}}">
+            <img src="{{logo_url}}" alt="{{t 'logo'}}">
           {{/link}}
         </div>
       </div>  
       <div class="col-xs-12 col-sm-8">
-        <div class="pull-right text-right top-header">
+        <div class="top-header">
            <!-- <label class="status"> Choose Your Language</label> -->
             {{#if alternative_locales}}
               <div class="dropdown language-selector btn" aria-haspopup="true">

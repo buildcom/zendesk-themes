@@ -1,0 +1,27 @@
+.article-page .col-md-8 {
+  padding-left: 0;
+}
+
+.article-body {
+  overflow-x: auto;
+
+  ul li {
+    list-style-type: disc;
+  }
+}
+
+h1.article-head {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.article-subscribe {
+  display: inline-block;
+  margin: 0 0 15px 0;
+}
+
+.article-body {
+  ul, ol {
+    padding-left: 20px;
+  }
+}

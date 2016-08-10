@@ -17,6 +17,8 @@
 }
 
 .top-header {
+  text-align: right;
+
   .language-selector {
     display: inline-block;
   }
@@ -122,33 +124,6 @@ aside.article-sidebar.side-column ul li {
   strong {
     color: #000;
     padding-left: 6px;
-  }
-}
-
-.article-page .col-md-8 {
-  padding-left: 0;
-}
-
-.article-body {
-  overflow-x: auto;
-
-  ul li {
-    list-style-type: disc;
-  }
-}
-
-h1.article-head {
-  display: inline-block;
-}
-
-.article-subscribe {
-  display: inline-block;
-  margin-top: 20px;
-}
-
-.article-body {
-  ul, ol {
-    padding-left: 20px;
   }
 }
 

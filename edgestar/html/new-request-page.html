@@ -12,7 +12,7 @@
 </div>
 <div class="container">
   <div class="col-xs-12">
-    <h1 class="page-header">
+    <h1 class="page-header hidden">
       {{t 'submit_a_request'}}
       {{#if follow_up}}
       <span class="follow-up-hint">
@@ -20,69 +20,59 @@
       </span>
       {{/if}}
     </h1>
-    <hr>
 
-    <div id="tabbed-forms">
+    <div id="accordion-forms">
 
       <!-- 
 
-      STEP 1/2
+      TO HIDE FORM TITLE & FORM
 
-      1) Add class "hidden" to li.
-      2) Remove class "active" if applicable / apply to another.
+      Add class "hidden" 
 
-      Show: 
+      SHOW:
 
-      <li class="active">
-        <a href="#service-request-form" role="tab" data-toggle="tab">Service Request Form</a>
-      </li>
+      <div class="panel panel-default fs-panel">
+        ...
+      </div>
+  
+      HIDE:
 
-      Hide:
-
-      <li class="hidden">
-        <a href="#service-request-form" role="tab" data-toggle="tab">Service Request Form</a>
-      </li>
+      <div class="panel panel-default fs-panel hidden">
+        ...
+      </div>
 
       -->
-
-      <ul class="nav nav-tabs" role="tablist">
-        <li class="active">
-          <a href="#service-request-form" role="tab" data-toggle="tab">Service Request Form</a>
-        </li>
-        <li class="">
-          <a href="#diagnostic-tool" role="tab" data-toggle="tab">Diagnostic Tool</a>
-        </li>
-      </ul>
       
-      <!-- FORMS DISPLAYED HERE -->
-      <div class="tab-content">
-        <!-- 
-
-        STEP 2/2
-
-        1) Add class "hidden" to tab-pane.
-        2) Remove class "active" if applicable / apply to another.
-
-        Show: 
-
-        <div role="tabpanel" class="tab-pane active" id="service-request-form">
-          <iframe src="blah" frameborder="0"></iframe>
+      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="serviceRequestForm">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#service-request-form" aria-expanded="true" aria-controls="service-request-form">
+                Service 
+              </a>
+            </h4>
+          </div>
+          <div id="service-request-form" class="panel-collapse collapse fs-panel" role="tabpanel" aria-labelledby="serviceRequestForm">
+            <div class="panel-body">
+              <script type="text/javascript" src="https://livingdirect.formstack.com/forms/js.php/esr_1"></script><noscript><a href="https://livingdirect.formstack.com/forms/esr_1" title="Online Form">Online Form - EdgeStar Service Request</a></noscript>
+            </div>
+          </div>
         </div>
-
-        Hide:
-
-        <div role="tabpanel" class="tab-pane hidden" id="service-request-form">
-          <iframe src="blah" frameborder="0"></iframe>
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="diagnosticTool">
+            <h4 class="panel-title">
+              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#diagnostic-tool" aria-expanded="false" aria-controls="diagnostic-tool">
+                Diagnostic Tool
+              </a>
+            </h4>
+          </div>
+          <div id="diagnostic-tool" class="panel-collapse collapse fs-panel" role="tabpanel" aria-labelledby="diagnosticTool">
+            <div class="panel-body">
+              <script type="text/javascript" src="https://livingdirect.formstack.com/forms/js.php/esr_2"></script><noscript><a href="https://livingdirect.formstack.com/forms/esr_1" title="Online Form">Online Form - EdgeStar Diagnostic Form</a></noscript>
+            </div>
+          </div>
         </div>
-
-        -->
-        <div role="tabpanel" class="tab-pane active" id="service-request-form">
-          <script type="text/javascript" src="https://livingdirect.formstack.com/forms/js.php/esr_1"></script><noscript><a href="https://livingdirect.formstack.com/forms/esr_1" title="Online Form">Online Form - EdgeStar Service Request</a></noscript>
-        </div>
-        <div role="tabpanel" class="tab-pane" id="diagnostic-tool">
-          <script type="text/javascript" src="https://livingdirect.formstack.com/forms/js.php/esr_2"></script><noscript><a href="https://livingdirect.formstack.com/forms/esr_1" title="Online Form">Online Form - EdgeStar Diagnostic Form</a></noscript>
-        </div>
-      </div>
+      </div> <!-- end panel-group -->
         
     </div> <!-- end tabbed-forms -->
 

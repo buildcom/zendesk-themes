@@ -1,42 +1,50 @@
 @media all and (max-width: 480px) {
   
-    .request-table-filters {
-      display: inline-block;
-      margin: 10px -15px;
-    }
+  .regular-search-wrapper {
 
-    form.request-table-toolbar input {
-      width: 100%;
-    }
+  }
 
-    .top-header a, span#user-name {
-      font-size: 0.9em;
-    }
+  .request-table-filters {
+    display: inline-block;
+    margin: 10px -15px;
+  }
 
-    .help-manual .col-xs-3 {
-      padding: 0;
-    }
+  form.request-table-toolbar input {
+    width: 100%;
+  }
 
-    body {
-      form.search input {
-        
-        &#query {
-          width: 70%;
-        }
+  .top-header a, span#user-name {
+    font-size: 0.9em;
+  }
 
-        &[type="submit"] {
-          width: 30%;
-        }
+  .top-header {
+    text-align: center;
+  }
+
+  .help-manual .col-xs-3 {
+    padding: 0;
+  } 
+
+  body {
+    form.search input {
+      
+      &#query {
+        width: 70%;
       }
 
-      span.icons:after {
-        content: "";
+      &[type="submit"] {
+        width: 30%;
       }
+    }
+
+    span.icons:after {
+      content: "";
+    }
 
     .nav-spaced li + li {
       margin: 0;
     }
-    
+
     .nav-spaced li, .nav-bordered li {
       padding-right: 10px !important;
     }
@@ -47,9 +55,18 @@
       margin: 0;
     }
   }
+
 }
 
 @media all and (max-width: 767px) {
+
+  .regular-search-wrapper {
+    text-align: left;
+    
+    input[type="submit"] {
+      background-size: 25%;
+    }
+  }
   
   .side-column.col-md-4 {
     margin-top: 30px;
@@ -57,6 +74,10 @@
 
   .top-header .language-selector, body a.submit-a-request.btn {
     margin-bottom: 2px;
+  }
+
+  .top-header {
+    text-align: center;
   }
 
   form.search input {

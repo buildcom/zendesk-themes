@@ -27,6 +27,12 @@ jQuery(window).load(function() { // Make sure the whole site is loaded
   }
 });
 
+/**
+* Collapsible forms
+*/  
+
+$('.collapse').collapse('hide');
+
 $(document).ready(function() {
 
   $('.top-header a.login, .section-subscribe > a.dropdown-toggle, .article-subscribe > a').addClass('btn');
@@ -43,27 +49,40 @@ $(document).ready(function() {
 
   $('.powered-by-zendesk').addClass('container');
 
+  /**
+  * Text swaps
+  */
+
   $('#query').attr('placeholder','Enter a question, keyword or topic…');
-  
   $('a.submit-a-request.btn').text('Contact EdgeStar Support');
   
-  //=================
-  // Tab Functionality
-  // Show first one
-  $('.nav-tabs a:first').tab('show');
-  
-  // Show clicked tab
-  $('.nav-tabs a').click(function(){
-    $(this).tab('show');
+  /**
+  * Work around to add clearfix on home page.
+  */
+
+  var $categoryCols = $('.home-section .category-column');
+  var clearFix = '<div class="clearfix"></div>';
+
+  $.each($categoryCols, function(idx) {
+    var normalizer = idx + 1;
+    if (normalizer % 2 == 0) {
+      $(clearFix).insertAfter($categoryCols[idx]);
+    }
   });
-  
-  // social share popups
+
+  /**
+  * Social share popups
+  */
+
   $(".share a").click(function(e) {
     e.preventDefault();
     window.open(this.href, "", "height = 500, width = 500");
   });
 
-  // toggle the share dropdown in communities
+  /**
+  * Toggle the share dropdown in communities
+  */
+
   $(".share-label").on("click", function(e) {
     e.stopPropagation();
     var isSelected = this.getAttribute("aria-selected") == "true";
@@ -71,11 +90,17 @@ $(document).ready(function() {
     $(".share-label").not(this).attr("aria-selected", "false");
   });
 
+  /**
+  * Click Events
+  */
+
   $(document).on("click", function() {
     $(".share-label").attr("aria-selected", "false");
   });
 
-  // show form controls when the textarea receives focus or backbutton is used and value exists
+  /**
+  * Show form controls when the textarea receives focus or backbutton is used and value exists
+  */
   var $answerbodyTextarea = $(".answer-body textarea"),
       $answerFormControls = $(".answer-form-controls"),
       $commentContainerTextarea = $(".comment-container textarea"),
@@ -97,13 +122,19 @@ $(document).ready(function() {
     $answerFormControls.show();
   }
 
-  // Submit requests filter form in the request list page
+  /**
+  * Submit requests filter form in the request list page
+  */
+
   $("#request-status-select, #request-organization-select")
     .on("change", function() {
       search();
     });
 
-  // Submit requests filter form in the request list page
+  /**
+  * Submit requests filter form in the request list page
+  */
+
   $("#quick-search").on("keypress", function(e) {
     if (e.which === 13) {
       search();
@@ -118,7 +149,10 @@ $(document).ready(function() {
     });
   }
 
-  // Submit organization form in the request page
+  /**
+  * Submit organization form in the request page
+  */
+
   $("#request-organization select").on("change", function() {
     this.form.submit();
   });

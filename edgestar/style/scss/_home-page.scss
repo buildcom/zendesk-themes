@@ -1,0 +1,29 @@
+.container.home-section .list-group a {
+  &:nth-child(n+6) {
+    display: none;
+  }
+}
+
+a.home-section-card {
+  display: inline-block;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+
+  h3 {
+    font-family: $primary-site-font-condensed;
+  }
+  
+  &:hover {
+    cursor: pointer;
+    text-decoration: none;
+  }
+}
+
+i.home-section-icon {
+  padding: 20px;
+  border-radius: 100px;
+  font-size: 2.5em;
+  color: white;
+  background-color: $base-e;   
+}

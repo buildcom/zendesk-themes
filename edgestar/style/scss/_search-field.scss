@@ -25,17 +25,17 @@
   }
 
   input#query {
-    background: #fff;
-    border: solid #3b3b3b;
+    background: $base-a;
+    border: solid $base-e;
     border-width: 2px 0 2px 2px;
-    color: #8d8c8c;
-    font-size: 2.09em;
+    color: $base-e;
+    font-family: $primary-site-font;
+    font-size: 2em;
     height: 60px;
     margin: 0 0 30px 0;
     padding: 0 0 0 5%;
     width: 90%;
     border-radius: 50px 0 0 50px;
-    font-weight: 300;
   }
 
   .search-form {
@@ -59,7 +59,7 @@
       li {
         padding: 3px 0;
         a {
-          color: $base-e;
+          color: $brand-a;
           font-weight: 500;
           font-size: 0.9em;
         }
@@ -69,10 +69,11 @@
 }
 
 .regular-search-wrapper {
+  text-align: right;
 
   input[type="search"] {
     width: 70%;
-    padding: 1em;
+    padding: .5em;
     border: 1px solid $base-e;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -82,11 +83,11 @@
     border: 1px solid $base-e;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
-    padding: 1em 2em;
+    padding: .5em 2em;
     margin-left: -7px;
     margin-top: -2px;
     background: url("http://p4.zdassets.com/hc/theme_assets/1021718/200071026/search-submit-dark-grey.png") no-repeat center center #fff;
-    background-size: 50%;
+    background-size: 40%;
     text-indent: -9999px;
   }
 

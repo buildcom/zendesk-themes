@@ -14,38 +14,41 @@
   <div class="col-xs-12">
     <h1 class="page-header">{{category.name}}</h1>
     <p class="description">{{category.description}}</p>
+    <hr>
     <div class="section-tree">
       {{#each sections}}
         <section class="section col-xs-12 col-sm-6">
-          <h3>
-            {{#if internal}}
-              <span class="visibility-internal" data-title="{{t 'internal'}}">
-                <span class="visibility-internal-icon"></span>
-              </span>
-            {{/if}}
-            <a href="{{url}}">{{name}}</a>
-          </h3>
-          {{#if articles}}
-            <ul class="article-list">
-              {{#each articles}}
-                <li {{#if promoted}} class="article-promoted" {{/if}}>
-                  {{#if promoted}}
-                    <span data-title="{{t 'promoted'}}">★</span>
-                  {{/if}}
-                  <a href="{{url}}">{{title}}</a>
-                </li>
-              {{/each}}
-              {{#if more_articles}}
-                <a href="{{url}}" class="see-all-articles">
-                  {{t 'show_all_articles' count=article_count}}
-                </a>
+          <div class="row">
+            <h3>
+              {{#if internal}}
+                <span class="visibility-internal" data-title="{{t 'internal'}}">
+                  <span class="visibility-internal-icon"></span>
+                </span>
               {{/if}}
-            </ul>
-          {{else}}
-            <i class="section-empty">
-              <a href="{{url}}">{{t 'empty'}}</a>
-            </i>
-          {{/if}}
+              <a href="{{url}}">{{name}}</a>
+            </h3>
+            {{#if articles}}
+              <ul class="article-list">
+                {{#each articles}}
+                  <li {{#if promoted}} class="article-promoted" {{/if}}>
+                    {{#if promoted}}
+                      <span data-title="{{t 'promoted'}}">★</span>
+                    {{/if}}
+                    <a href="{{url}}">{{title}}</a>
+                  </li>
+                {{/each}}
+                {{#if more_articles}}
+                  <a href="{{url}}" class="see-all-articles">
+                    {{t 'show_all_articles' count=article_count}}
+                  </a>
+                {{/if}}
+              </ul>
+            {{else}}
+              <i class="section-empty">
+                <a href="{{url}}">{{t 'empty'}}</a>
+              </i>
+            {{/if}}
+          </div>
         </section>
       {{else}}
         <i class="category-empty">
