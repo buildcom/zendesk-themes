@@ -1,9 +1,5 @@
 @media all and (max-width: 480px) {
   
-  .regular-search-wrapper {
-
-  }
-
   .request-table-filters {
     display: inline-block;
     margin: 10px -15px;
@@ -60,6 +56,19 @@
 
 @media all and (max-width: 767px) {
 
+  .header-container {
+    min-height: 65px;
+
+    .logo-container {
+
+      .logo {
+        width: 300px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
+  }
+
   .regular-search-wrapper {
     text-align: left;
     
@@ -78,6 +87,19 @@
 
   .top-header {
     text-align: center;
+  }
+  
+  #home-page-search {
+    input {
+      
+      &#query {
+        width: 70%;
+      }
+
+      &[type="submit"] {
+        width: 15%;
+      }
+    }
   }
 
   form.search input {

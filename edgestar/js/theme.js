@@ -27,12 +27,6 @@ jQuery(window).load(function() { // Make sure the whole site is loaded
   }
 });
 
-/**
-* Collapsible forms
-*/  
-
-$('.collapse').collapse('hide');
-
 $(document).ready(function() {
 
   $('.top-header a.login, .section-subscribe > a.dropdown-toggle, .article-subscribe > a').addClass('btn');

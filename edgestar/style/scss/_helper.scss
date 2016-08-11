@@ -1,0 +1,26 @@
+.vertical-center-row {
+  display: table;
+  
+  .vertical-center {
+    display: table-cell;
+    vertical-align: middle;
+    float: none;
+  }
+}
+
+.vertical-align-translate {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.vertical-align-no-float {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
+
+.wh-one-hundred-percent {
+  width: 100%;
+  height: 100%;
+}

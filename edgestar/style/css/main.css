@@ -122,9 +122,6 @@ a.submit-a-request {
 #user #user-name {
   max-width: 50px; }
 
-body a.submit-a-request.btn {
-  padding: 7px 8px; }
-
 .my-activities-table > p {
   padding: 20px 0; }
 
@@ -167,6 +164,14 @@ footer.comment-footer {
   color: #034667;
   position: absolute;
   left: 0; }
+
+.btn {
+  background: #034667;
+  color: #fff;
+  display: inline-block; }
+
+body a.submit-a-request.btn {
+  padding: 7px 8px; }
 
 .clearfix::before, .clearfix::after {
   content: " ";
@@ -774,26 +779,35 @@ form footer a {
 .form footer {
   border-top: 0; }
 
-.header-bg {
-  background: url("http://p4.zdassets.com/hc/theme_assets/1021718/200071026/header-v3.jpg") no-repeat;
-  background-position: center; }
-
-.header-bg {
-  padding: 15px 0;
-  background-color: #120A0A; }
-
-.brand-logo {
-  padding: 20px 0; }
-
-.logo {
-  padding: 15px 0; }
-
-.top-header {
-  text-align: right; }
-  .top-header .language-selector {
-    display: inline-block; }
-  .top-header a.dropdown-toggle, .top-header .dropdown-toggle:after {
-    color: #034667; }
+.header-container {
+  height: 90px; }
+  .header-container .logo-col {
+    height: 100%; }
+    .header-container .logo-col .logo-container {
+      width: 100%;
+      height: 100%; }
+      .header-container .logo-col .logo-container .logo {
+        width: 250px;
+        height: 100%;
+        display: table; }
+        .header-container .logo-col .logo-container .logo a {
+          display: table-cell;
+          vertical-align: middle;
+          float: none; }
+  .header-container .sign-in-col {
+    height: 100%; }
+    .header-container .sign-in-col .top-header-container {
+      width: 100%;
+      height: 100%;
+      display: table; }
+      .header-container .sign-in-col .top-header-container .top-header {
+        display: table-cell;
+        vertical-align: middle;
+        float: none; }
+        .header-container .sign-in-col .top-header-container .top-header .language-selector {
+          display: inline-block; }
+        .header-container .sign-in-col .top-header-container .top-header a.dropdown-toggle, .header-container .sign-in-col .top-header-container .top-header .dropdown-toggle:after {
+          color: #034667; }
 
 #user .with-image {
   padding: 2px 5px; }
@@ -955,11 +969,6 @@ section.promoted-articles h3 {
     .follow-us ul li a.linked {
       padding-left: 9px; }
 
-.btn {
-  background: #034667;
-  color: #fff;
-  display: inline-block; }
-
 ::-moz-placeholder {
   color: #8d8c8c;
   opacity: 1; }
@@ -969,6 +978,38 @@ section.promoted-articles h3 {
   font-size: 1.33em;
   padding: 0px 15px 20px;
   font-weight: 500; }
+
+.vertical-center-row {
+  display: table; }
+  .vertical-center-row .vertical-center {
+    display: table-cell;
+    vertical-align: middle;
+    float: none; }
+
+.vertical-align-translate {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); }
+
+.vertical-align-no-float {
+  display: inline-block;
+  vertical-align: middle;
+  float: none; }
+
+.wh-one-hundred-percent {
+  width: 100%;
+  height: 100%; }
+
+.header-bg {
+  background: url("http://p4.zdassets.com/hc/theme_assets/1021718/200071026/header-v3.jpg") no-repeat;
+  background-position: center; }
+
+.header-bg {
+  padding: 15px 0;
+  background-color: #120A0A; }
+
+.brand-logo {
+  padding: 20px 0; }
 
 .container.home-section .list-group a:nth-child(n+6) {
   display: none; }
@@ -1059,8 +1100,15 @@ ul.nav.nav-tabs > li.active {
     border-right: 8px solid transparent;
     border-bottom: 8px solid #045e8a; }
 
-.fsBody.fsEmbed {
+#fs-accordion-form .fsBody.fsEmbed {
   padding: 0; }
+#fs-accordion-form .panel-heading {
+  padding: 0; }
+#fs-accordion-form .fs-panel-link {
+  display: block;
+  padding: 15px; }
+#fs-accordion-form .panel-collapse.collapse.fs-panel-content {
+  height: auto; }
 
 .form {
   max-width: 600px;
@@ -1465,6 +1513,13 @@ ul.attachment-list li:before, ul.attachments li:before {
     padding: 0;
     margin: 0; } }
 @media all and (max-width: 767px) {
+  .header-container {
+    min-height: 65px; }
+    .header-container .logo-container .logo {
+      width: 300px;
+      margin-right: auto;
+      margin-left: auto; }
+
   .regular-search-wrapper {
     text-align: left; }
     .regular-search-wrapper input[type="submit"] {
@@ -1478,6 +1533,11 @@ ul.attachment-list li:before, ul.attachments li:before {
 
   .top-header {
     text-align: center; }
+
+  #home-page-search input#query {
+    width: 70%; }
+  #home-page-search input[type="submit"] {
+    width: 15%; }
 
   form.search input#query {
     width: 80%; }

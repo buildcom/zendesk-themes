@@ -21,12 +21,25 @@ ul.nav.nav-tabs > li.active {
   }
 }
 
-.fsBody.fsEmbed {
-  padding: 0;
-}
+#fs-accordion-form {
+  
+  .fsBody.fsEmbed {
+    padding: 0;
+  }
 
-.panel-collapse.collapse.fs-panel {
-  // display: none;
+  .panel-heading {
+    padding: 0;
+  }
+
+  .fs-panel-link {
+    display: block;
+    padding: 15px;
+  }
+
+  .panel-collapse.collapse.fs-panel-content {
+    height: auto;
+  }
+
 }
 
 .form {

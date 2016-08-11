@@ -1,29 +1,49 @@
-.header-bg {
-   background: url("http://p4.zdassets.com/hc/theme_assets/1021718/200071026/header-v3.jpg") no-repeat;
-  background-position: center;
-}
+.header-container {
+  height: 90px;
 
-.header-bg {
-  padding: 15px 0;
-  background-color: $base-f;
-}
+  .logo-col {
+    height: 100%;
 
-.brand-logo {
-  padding: 20px 0;
-}
+    .logo-container {
+      width: 100%;
+      height: 100%;
+      
+      .logo {
+        width: 250px;
+        height: 100%;
+        display: table;
 
-.logo {
-  padding: 15px 0;
-}
-
-.top-header {
-  text-align: right;
-
-  .language-selector {
-    display: inline-block;
+        a {
+          display: table-cell;
+          vertical-align: middle;
+          float: none;
+        }
+      }
+    }
   }
-  a.dropdown-toggle, .dropdown-toggle:after {
-    color: $brand-a;  
+  
+  .sign-in-col {
+    height: 100%;
+
+    .top-header-container {
+      width: 100%;
+      height: 100%;
+      display: table;
+
+      .top-header {
+        display: table-cell;
+        vertical-align: middle;
+        float: none;
+
+        .language-selector {
+          display: inline-block;
+        }
+
+        a.dropdown-toggle, .dropdown-toggle:after {
+          color: $brand-a;  
+        }
+      }
+    }
   }
 }
 
@@ -246,12 +266,6 @@ section.promoted-articles h3 {
       padding-left: 9px;
     } 
   }
-}
-
-.btn {
-  background: $brand-a;
-  color: #fff;
-  display: inline-block;
 }
 
 ::-moz-placeholder {

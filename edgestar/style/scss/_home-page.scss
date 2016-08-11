@@ -1,3 +1,17 @@
+.header-bg {
+  background: url("http://p4.zdassets.com/hc/theme_assets/1021718/200071026/header-v3.jpg") no-repeat;
+  background-position: center;
+}
+
+.header-bg {
+  padding: 15px 0;
+  background-color: $base-f;
+}
+
+.brand-logo {
+  padding: 20px 0;
+}
+
 .container.home-section .list-group a {
   &:nth-child(n+6) {
     display: none;

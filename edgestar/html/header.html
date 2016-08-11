@@ -1,35 +1,39 @@
-<header class="main-hc-header">
-   <div class="container-fluid container">
-      <div class="col-xs-12 col-sm-4 text-center">
-        <div class="logo">
-          {{#link 'help_center'}}
-            <img src="{{logo_url}}" alt="{{t 'logo'}}">
-          {{/link}}
-        </div>
-      </div>  
-      <div class="col-xs-12 col-sm-8">
-        <div class="top-header">
-           <!-- <label class="status"> Choose Your Language</label> -->
-            {{#if alternative_locales}}
-              <div class="dropdown language-selector btn" aria-haspopup="true">
-                <a class="dropdown-toggle">
-                  {{current_locale.name}}
+<div class="container header-container">
+  <div class="col-xs-12 col-sm-6 col-md-4 text-center logo-col">
+    <div class="logo-container">
+      <div class="logo">
+        {{#link 'help_center'}}
+          <img src="{{logo_url}}" alt="{{t 'logo'}}">
+        {{/link}}
+      </div>
+    </div>
+  </div>  
+  <div class="col-xs-12 col-sm-6 col-md-8 text-right sign-in-col">
+    <div class="top-header-container">
+      <div class="top-header">
+        <!-- <label class="status"> Choose Your Language</label> -->
+        {{#if alternative_locales}}
+          <div class="dropdown language-selector btn" aria-haspopup="true">
+            <a class="dropdown-toggle">
+              {{current_locale.name}}
+            </a>
+            <span class="dropdown-menu dropdown-menu-end" role="menu">
+              {{#each alternative_locales}}
+                <a href="{{url}}" dir="{{direction}}" rel="nofollow" role="menuitem">
+                  {{name}}
                 </a>
-                <span class="dropdown-menu dropdown-menu-end" role="menu">
-                  {{#each alternative_locales}}
-                    <a href="{{url}}" dir="{{direction}}" rel="nofollow" role="menuitem">
-                      {{name}}
-                    </a>
-                  {{/each}}
-                </span>
-              </div>
-            {{/if}}
-          {{link 'new_request' class='submit-a-request btn'}}
-          {{user_info}}
-        </div>
-      </div>  
-   </div>
-</header>
+              {{/each}}
+            </span>
+          </div>
+        {{/if}}
+        {{link 'new_request' class='submit-a-request btn'}}
+        {{user_info}}
+      </div>
+    </div>
+  </div> 
+</div>
+
+<div class="clearfix"></div>
 
 <div class="navigation">
   <nav class="navbar navbar-default">
@@ -39,7 +43,7 @@
       
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mobile-nav" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -48,7 +52,7 @@
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div class="collapse navbar-collapse" id="mobile-nav">
           <ul class="nav navbar-nav">
             <li>
               {{#link 'help_center'}} Home {{/link}}

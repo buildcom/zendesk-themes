@@ -21,7 +21,7 @@
       {{/if}}
     </h1>
 
-    <div id="accordion-forms">
+    <div id="accordion-forms-container">
 
       <!-- 
 
@@ -42,39 +42,42 @@
       </div>
 
       -->
-      
-      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+      <div class="panel-group" id="fs-accordion-form" role="tablist" aria-multiselectable="true">
+
         <div class="panel panel-default">
-          <div class="panel-heading" role="tab" id="serviceRequestForm">
+          <div class="panel-heading" role="tab" id="service-request-form-heading">
             <h4 class="panel-title">
-              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#service-request-form" aria-expanded="true" aria-controls="service-request-form">
-                Service 
+              <a class="fs-panel-link" role="button" data-toggle="collapse" data-parent="#fs-accordion-form" href="#service-request-form" aria-expanded="true" aria-controls="service-request-form">
+                Service Request Form
               </a>
             </h4>
           </div>
-          <div id="service-request-form" class="panel-collapse collapse fs-panel" role="tabpanel" aria-labelledby="serviceRequestForm">
+          <div id="service-request-form" class="panel-collapse collapse fs-panel-content" role="tabpanel" aria-labelledby="service-request-form-heading">
             <div class="panel-body">
               <script type="text/javascript" src="https://livingdirect.formstack.com/forms/js.php/esr_1"></script><noscript><a href="https://livingdirect.formstack.com/forms/esr_1" title="Online Form">Online Form - EdgeStar Service Request</a></noscript>
             </div>
           </div>
         </div>
+
         <div class="panel panel-default">
-          <div class="panel-heading" role="tab" id="diagnosticTool">
+          <div class="panel-heading" role="tab" id="diagnostic-form-heading">
             <h4 class="panel-title">
-              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#diagnostic-tool" aria-expanded="false" aria-controls="diagnostic-tool">
-                Diagnostic Tool
+              <a class="fs-panel-link" role="button" data-toggle="collapse" data-parent="#fs-accordion-form" href="#diagnostic-form" aria-expanded="true" aria-controls="diagnostic-form">
+                Diagnostic Form
               </a>
             </h4>
           </div>
-          <div id="diagnostic-tool" class="panel-collapse collapse fs-panel" role="tabpanel" aria-labelledby="diagnosticTool">
+          <div id="diagnostic-form" class="panel-collapse collapse fs-panel-content" role="tabpanel" aria-labelledby="diagnostic-form-heading">
             <div class="panel-body">
-              <script type="text/javascript" src="https://livingdirect.formstack.com/forms/js.php/esr_2"></script><noscript><a href="https://livingdirect.formstack.com/forms/esr_1" title="Online Form">Online Form - EdgeStar Diagnostic Form</a></noscript>
+              <script type="text/javascript" src="https://livingdirect.formstack.com/forms/js.php/esr_2"></script><noscript><a href="https://livingdirect.formstack.com/forms/esr_2" title="Online Form">Online Form - EdgeStar Diagnostic Form</a></noscript>
             </div>
           </div>
         </div>
-      </div> <!-- end panel-group -->
+
+      </div>        
         
-    </div> <!-- end tabbed-forms -->
+    </div> <!-- end fs-accordion-forms -->
 
     {{chat}}
 

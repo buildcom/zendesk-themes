@@ -14,7 +14,7 @@
    <div class="col-sm-8 col-xs-12">
       <!-- Zendesk's component to show the article title (Article's name) -->
       <h1 class="article-head">{{article.title}}</h1>
-      <div class="article-user-info">
+      <div class="article-user-info hidden">
          <!-- Zendesk's component to show/display the Author Avatar -->
          <img src="{{article.author.avatar_url}}" alt="Avatar"/>
          <!-- Zendesk's component to show/display the Author Name -->
@@ -28,7 +28,6 @@
          <!-- Zendesk's component to show/display the Created Article date & time  -->
          <strong>Created</strong> : {{date article.created_at}}
       </div>
-      <div class="article-subscribe">{{subscribe}}</div>
       <div class="article-body">
          <!-- Zendesk's component to show the article's body (Content put during article creation) -->
          {{article.body}}
@@ -43,6 +42,10 @@
             {{/each}}
          </ul>
       </div>
+      <h5>
+         Stay up to date on this article:
+      </h5>
+      <div class="article-subscribe">{{subscribe}}</div>
       <div class="article-voting">
          <!-- Zendesk's component to show/display the article voting -->
          {{#with article}}
