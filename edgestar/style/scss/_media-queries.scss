@@ -1,5 +1,19 @@
 @media all and (max-width: 480px) {
   
+  #home-page-search {
+
+    form {
+      
+      &.search input[type="submit"] {
+        width: 20%;
+      }
+
+      input#query { 
+        font-size: 1.25em;
+      }
+    }
+  }
+
   .request-table-filters {
     display: inline-block;
     margin: 10px -15px;
@@ -57,7 +71,7 @@
 @media all and (max-width: 767px) {
 
   .header-container {
-    min-height: 65px;
+    height: 65px;
 
     .logo-container {
 

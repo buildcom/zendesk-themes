@@ -1482,6 +1482,11 @@ ul.attachment-list li:before, ul.attachments li:before {
   padding-top: 20px; }
 
 @media all and (max-width: 480px) {
+  #home-page-search form.search input[type="submit"] {
+    width: 20%; }
+  #home-page-search form input#query {
+    font-size: 1.25em; }
+
   .request-table-filters {
     display: inline-block;
     margin: 10px -15px; }
@@ -1514,7 +1519,7 @@ ul.attachment-list li:before, ul.attachments li:before {
     margin: 0; } }
 @media all and (max-width: 767px) {
   .header-container {
-    min-height: 65px; }
+    height: 65px; }
     .header-container .logo-container .logo {
       width: 300px;
       margin-right: auto;
