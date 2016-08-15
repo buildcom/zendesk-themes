@@ -54,7 +54,7 @@ $(document).ready(function() {
   * Work around to add clearfix on home page.
   */
 
-  var $categoryCols = $('.home-section .category-column');
+  var $categoryCols = $('.home-section .col-sm-4.category-column');
   var clearFix = '<div class="clearfix"></div>';
 
   $.each($categoryCols, function(idx) {

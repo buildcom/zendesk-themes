@@ -63,8 +63,10 @@ h1.page-header {
     }
     > li {
       + li:before {
-        content: "|";
-        padding: 0 2px;
+        content: "\f054";
+        font-family: FontAwesome;
+        margin: 0 6px;
+        font-size: .8em;
       }
       a {
         &:hover {

@@ -1001,12 +1001,9 @@ section.promoted-articles h3 {
   height: 100%; }
 
 .header-bg {
-  background: url("http://p4.zdassets.com/hc/theme_assets/1021718/200071026/header-v3.jpg") no-repeat;
-  background-position: center; }
-
-.header-bg {
-  padding: 15px 0;
-  background-color: #120A0A; }
+  background-color: #120A0A;
+  background-position: center;
+  padding: 15px 0; }
 
 .brand-logo {
   padding: 20px 0; }
@@ -1084,8 +1081,10 @@ h1.page-header {
     .breadcrumb-wrapper .breadcrumbs li {
       display: inline-block; }
     .breadcrumb-wrapper .breadcrumbs > li + li:before {
-      content: "|";
-      padding: 0 2px; }
+      content: "\f054";
+      font-family: FontAwesome;
+      margin: 0 6px;
+      font-size: .8em; }
 
 ul.nav.nav-tabs > li.active {
   position: relative; }

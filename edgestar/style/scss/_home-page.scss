@@ -1,11 +1,13 @@
 .header-bg {
-  background: url("http://p4.zdassets.com/hc/theme_assets/1021718/200071026/header-v3.jpg") no-repeat;
-  background-position: center;
-}
+  // background: url("http://p4.zdassets.com/hc/theme_assets/1021718/200071026/header-v3.jpg") no-repeat center center fixed; 
+  // -webkit-background-size: cover;
+  // -moz-background-size: cover;
+  // -o-background-size: cover;
+  // background-size: cover;
 
-.header-bg {
-  padding: 15px 0;
   background-color: $base-f;
+  background-position: center;
+  padding: 15px 0;
 }
 
 .brand-logo {
