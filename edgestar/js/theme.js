@@ -47,7 +47,7 @@ $(document).ready(function() {
   * Text swaps
   */
 
-  $('#query').attr('placeholder','Enter a question, keyword or topic…');
+  $('#query').attr('placeholder','Search help articles...');
   $('a.submit-a-request.btn').text('Contact EdgeStar Support');
   
   /**
@@ -59,7 +59,7 @@ $(document).ready(function() {
 
   $.each($categoryCols, function(idx) {
     var normalizer = idx + 1;
-    if (normalizer % 2 == 0) {
+    if (normalizer % 3 == 0) {
       $(clearFix).insertAfter($categoryCols[idx]);
     }
   });

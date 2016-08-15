@@ -46,24 +46,26 @@
       </div>
     </div> <!-- end col -->
     <div class="col-xs-12 col-sm-4">
-      <section>
+      <div class="panel panel-default promoted-article-panel">
+        <div class="panel-body">
         {{#if promoted_articles}}
           <div class="promoted-articles">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <div class="panel-title">
-                  {{t 'promoted_articles'}}
-                </div>
-              </div>
-              <div class="list-group">
-                {{#each promoted_articles}}
-                  <a class="list-group-item" href="{{url}}">{{title}}</a>
-                {{/each}} 
-              </div>
-            </div>
+            <h3>
+              {{t 'promoted_articles'}}
+            </h3>
+
+            <ul>
+              {{#each promoted_articles}}
+                <li>
+                  <a href="{{url}}">{{title}}</a>
+                </li>
+              {{/each}} 
+            </ul>
+
           </div>
         {{/if}}
-      </section>
+        </div>
+      </div>
     </div> <!-- end col -->
   </div> <!-- end row -->
 </div> <!-- end container -->

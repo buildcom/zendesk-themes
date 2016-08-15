@@ -1032,6 +1032,9 @@ i.home-section-icon {
   color: white;
   background-color: #353333; }
 
+.promoted-articles h3 {
+  margin-top: 0; }
+
 .navigation .navbar-default {
   background: #353333;
   border: none;
@@ -1336,7 +1339,7 @@ h1.subject-head {
   margin: 0 0 0 -4px;
   vertical-align: top;
   width: 10%;
-  border-radius: 0 50px 50px 0;
+  border-radius: 0 4px 4px 0;
   text-indent: -9999px; }
 #home-page-search form input[type="submit"] {
   background: url("http://p4.zdassets.com/hc/theme_assets/1021718/200071026/search-submit-dark-grey.png") no-repeat center center #fff;
@@ -1355,7 +1358,7 @@ h1.subject-head {
   margin: 0 0 30px 0;
   padding: 0 0 0 5%;
   width: 90%;
-  border-radius: 50px 0 0 50px; }
+  border-radius: 4px 0 0 4px; }
 #home-page-search .search-form {
   margin: 30px 0; }
 #home-page-search .searchbox {
