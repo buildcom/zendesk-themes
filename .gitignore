@@ -1,5 +1,7 @@
 node_modules/
+
 **/.sass-cache
-*.map
+**/style/css/*.map
+
 *.sublime-project
 *.sublime-workspace
