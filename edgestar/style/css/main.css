@@ -1001,6 +1001,11 @@ section.promoted-articles h3 {
   height: 100%; }
 
 .header-bg {
+  background: url("http://p4.zdassets.com/hc/theme_assets/1021718/200071026/header-v4.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   background-color: #120A0A;
   background-position: center;
   padding: 15px 0; }
@@ -1008,7 +1013,7 @@ section.promoted-articles h3 {
 .brand-logo {
   padding: 20px 0; }
 
-.container.home-section .list-group a:nth-child(n+6) {
+.container.home-section .promoted-articles li:nth-child(n+6) {
   display: none; }
 
 a.home-section-card {
@@ -1021,13 +1026,17 @@ a.home-section-card {
   a.home-section-card:hover {
     cursor: pointer;
     text-decoration: none; }
+  a.home-section-card:hover i.home-section-icon {
+    background-color: #045e8a; }
 
 i.home-section-icon {
   padding: 20px;
   border-radius: 100px;
   font-size: 2.5em;
   color: white;
-  background-color: #353333; }
+  background-color: #034667; }
+  i.home-section-icon.fa.fa-question {
+    padding: 20px 27px; }
 
 .promoted-articles h3 {
   margin-top: 0; }
@@ -1080,6 +1089,8 @@ h1.page-header {
     font-size: 1em; }
     .breadcrumb-wrapper .breadcrumbs li {
       display: inline-block; }
+      .breadcrumb-wrapper .breadcrumbs li .active {
+        font-weight: bold; }
     .breadcrumb-wrapper .breadcrumbs > li + li:before {
       content: "\f054";
       font-family: FontAwesome;

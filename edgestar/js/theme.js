@@ -29,8 +29,11 @@ jQuery(window).load(function() { // Make sure the whole site is loaded
 
 $(document).ready(function() {
 
-  $('.top-header a.login, .section-subscribe > a.dropdown-toggle, .article-subscribe > a').addClass('btn');
+  // Add btn class to string of classes
+  var addBtnClass = '.top-header a.login, .section-subscribe > a.dropdown-toggle, .article-subscribe > a';
+  $(addBtnClass).addClass('btn');
 
+  // In breadcrumbs, make current page use active class
   $('.breadcrumbs li').each(function(_id, _it) {
     if (typeof $(_it).find('a').get(0) == 'undefined') {
       $(_it).addClass('active');
@@ -41,15 +44,61 @@ $(document).ready(function() {
     $('.table-responsive table').addClass('table');
   }
 
-  $('.powered-by-zendesk').addClass('container');
-
   /**
   * Text swaps
   */
 
+  // Swap text for home page search
   $('#query').attr('placeholder','Search help articles...');
+  // Swap text for contact form at the top of the page
   $('a.submit-a-request.btn').text('Contact EdgeStar Support');
   
+  /**
+  * Custom icon. Super hacky.
+  */
+
+  // Select all home page icons
+  var $allHomePageIcons = $('.home-section-icon');
+  // IDs that get custom icons
+  var categoryIds = [201545343, 201545403, 201545383, 201545363, 201277426, 201590623];
+
+  // Loop over all icons
+  $.each($allHomePageIcons, function(idx) {
+    // Store iterators id
+    var iconData = $($allHomePageIcons[idx]).data('icon');
+    // Based on the ID of the icon. If iconData is found in the array
+    // Add a font awesome class.
+    switch (categoryIds.indexOf(iconData) > -1) {
+      // FAQs
+      case iconData === 201545343:
+        $(this).addClass('fa-question')
+        break;
+      // Installation Guide
+      case iconData === 201545403:
+        $(this).addClass('fa-wrench')
+        break;
+      // Troubleshooting
+      case iconData === 201545383:
+        $(this).addClass('fa-file-text-o')
+        break;
+      // Support Videos
+      case iconData === 201545363:
+        $(this).addClass('fa-video-camera')
+        break;
+      // General Information
+      case iconData === 201277426:
+        $(this).addClass('fa-pencil')
+        break;
+      // About EdgeStar
+      case iconData === 201590623:
+        $(this).addClass('fa-question-circle')
+        break;
+      // If no ID found, give topic a generic icon
+      default:
+        $(this).addClass('fa-comments-o')
+    }
+  });
+
   /**
   * Work around to add clearfix on home page.
   */
@@ -59,8 +108,22 @@ $(document).ready(function() {
 
   $.each($categoryCols, function(idx) {
     var normalizer = idx + 1;
-    if (normalizer % 3 == 0) {
+    if (normalizer % 3 === 0) {
       $(clearFix).insertAfter($categoryCols[idx]);
+    }
+  });
+
+  /**
+  * Work around to add clearfix on category page.
+  */
+
+  var $sectionCols = $('.section.col-xs-12.col-sm-6');
+  var clearFixAndHr = '<div class="clearfix"></div><hr class="hidden-xs">';
+
+  $.each($sectionCols, function(idx) {
+    var normalizer = idx + 1;
+    if (normalizer % 2 === 0) {
+      $(clearFixAndHr).insertAfter($sectionCols[idx]);
     }
   });
 

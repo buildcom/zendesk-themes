@@ -60,6 +60,9 @@ h1.page-header {
     font-size: 1em;
     li {
       display: inline-block;
+      .active {
+        font-weight: bold;
+      }
     }
     > li {
       + li:before {
@@ -67,11 +70,6 @@ h1.page-header {
         font-family: FontAwesome;
         margin: 0 6px;
         font-size: .8em;
-      }
-      a {
-        &:hover {
-
-        }
       }
     }
   }

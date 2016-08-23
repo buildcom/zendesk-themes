@@ -31,20 +31,20 @@
 
 <div class="container home-section">
   <div class="row">
+    
     <div class="col-xs-12 col-sm-8">
       <div class="row">
         {{#each categories}}
           <div class="col-xs-12 col-sm-4 text-center category-column">
             <a class="home-section-card" href="{{url}}">
-              <i class="fa fa-comment home-section-icon"></i>
-              <h3>
-                {{name}}
-              </h3>
+              <i class="fa home-section-icon" data-icon="{{id}}"></i>
+              <h3>{{name}}</h3>
             </a> 
           </div>
         {{/each}}
       </div>
     </div> <!-- end col -->
+
     <div class="col-xs-12 col-sm-4">
       <div class="panel panel-default promoted-article-panel">
         <div class="panel-body">
@@ -53,7 +53,6 @@
             <h3>
               {{t 'promoted_articles'}}
             </h3>
-
             <ul>
               {{#each promoted_articles}}
                 <li>
@@ -61,11 +60,11 @@
                 </li>
               {{/each}} 
             </ul>
-
           </div>
         {{/if}}
         </div>
       </div>
     </div> <!-- end col -->
+
   </div> <!-- end row -->
 </div> <!-- end container -->
