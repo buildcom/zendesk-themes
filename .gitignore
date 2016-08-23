@@ -2,6 +2,7 @@ node_modules/
 
 **/.sass-cache
 **/style/css/*.map
+**/user_manual.pdf
 
 *.sublime-project
 *.sublime-workspace
