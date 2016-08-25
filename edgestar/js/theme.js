@@ -55,12 +55,14 @@ $(document).ready(function() {
   
   /**
   * Custom icon. Super hacky.
+  * As of now, no real way to distinguish between categories other than title and category ID
   */
 
   // Select all home page icons
   var $allHomePageIcons = $('.home-section-icon');
   // IDs that get custom icons
-  var categoryIds = [201545343, 201545403, 201545383, 201545363, 201277426, 201590623];
+  var categoryIds = [201545343, 201545403, 201545383, 201545363, 201277426, 201590623,
+                     200060525, 200060185, 201276073, 201342026, 201314606, 201575926];
 
   // Loop over all icons
   $.each($allHomePageIcons, function(idx) {
@@ -69,29 +71,29 @@ $(document).ready(function() {
     // Based on the ID of the icon. If iconData is found in the array
     // Add a font awesome class.
     switch (categoryIds.indexOf(iconData) > -1) {
-      // FAQs
-      case iconData === 201545343:
+      // FAQs - STG - PROD
+      case iconData === 201545343 || iconData === 200060525:
         $(this).addClass('fa-question')
         break;
-      // Installation Guide
-      case iconData === 201545403:
+      // Installation Guide - STG - PROD
+      case iconData === 201545403 || iconData === 200060185:
         $(this).addClass('fa-wrench')
         break;
-      // Troubleshooting
-      case iconData === 201545383:
+      // Troubleshooting - STG - PROD
+      case iconData === 201545383 || iconData === 201276073:
         $(this).addClass('fa-file-text-o')
         break;
-      // Support Videos
-      case iconData === 201545363:
+      // Support Videos - STG - PROD
+      case iconData === 201545363 || iconData === 201342026:
         $(this).addClass('fa-video-camera')
         break;
-      // General Information
-      case iconData === 201277426:
+      // General Information - STG - PROD
+      case iconData === 201277426 || iconData === 201314606:
         $(this).addClass('fa-pencil')
         break;
-      // About EdgeStar
-      case iconData === 201590623:
-        $(this).addClass('fa-question-circle')
+      // About EdgeStar - STG - PROD
+      case iconData === 201590623 || iconData === 201575926:
+        $(this).addClass('fa-info')
         break;
       // If no ID found, give topic a generic icon
       default:

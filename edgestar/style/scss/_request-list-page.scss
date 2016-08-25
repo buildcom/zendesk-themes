@@ -2,8 +2,10 @@
   display: table;
   padding: 8px;
   width: 100%;
-  box-shadow: 4px 3px 0px 1px $base-c;
-  background: $brand-a;
+  background: $base-a;
+  border: 1px $base-c solid;
+  border-radius: 4px;
+  margin-bottom: 15px;
 }
 
 .requests-search {

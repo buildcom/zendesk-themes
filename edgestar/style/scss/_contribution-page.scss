@@ -3,12 +3,15 @@
   margin-bottom: 25px;
   padding: 25px 0;
   background: #fff;
-  .breadcrumbs li {
-    color: #000000;
-    font-size: 20px;
-    font-weight: normal;
-    &:first-child, &::before {
-      display: none;
+  .breadcrumbs {
+    list-style-type: none;
+    li {
+      color: #000000;
+      font-size: 20px;
+      font-weight: normal;
+      &:first-child, &::before {
+        display: none;
+      }
     }
   }
 }
@@ -71,7 +74,7 @@ th {
 body {
   td, th {
     border-color: #dadada;
-    border-style: solid;
+    border: 1px $base-c solid;
     padding: 12px;
   }
 }
