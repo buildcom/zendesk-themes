@@ -130,6 +130,14 @@ $(document).ready(function() {
   });
 
   /**
+  * Set active class on form
+  */
+
+  $('.fs-panel-heading').click(function(){
+    $(this).addClass('active');
+  });
+
+  /**
   * Social share popups
   */
 
