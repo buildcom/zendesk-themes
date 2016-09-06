@@ -1,7 +1,14 @@
 .btn {
   background: $brand-a;
-  color: #fff;
+  color: $base-a;
   display: inline-block;
+  &.btn-default {
+    color: $base-a;
+    background: $brand-a;
+    &:hover, &:focus {
+      background: $brand-edark1;
+    }
+  }
 }
 
 body a.submit-a-request.btn {
