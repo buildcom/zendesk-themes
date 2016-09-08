@@ -40,3 +40,9 @@ form footer a {
 .form footer {
   border-top: 0;
 }
+
+div.fsBody.fsEmbed,
+form.fsForm.fsMultiColumn {
+  padding: 0;
+  margin: 0;
+}

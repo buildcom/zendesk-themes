@@ -180,6 +180,13 @@ footer.comment-footer {
 body a.submit-a-request.btn {
   padding: 7px 8px; }
 
+.new-request-desktop-btns,
+.new-request-mobile-btns {
+  margin-bottom: 15px; }
+  .new-request-desktop-btns .btn-diagnostic,
+  .new-request-mobile-btns .btn-diagnostic {
+    margin-right: 10px; }
+
 .clearfix::before, .clearfix::after {
   content: " ";
   display: table; }
@@ -795,6 +802,11 @@ form footer a {
 
 .form footer {
   border-top: 0; }
+
+div.fsBody.fsEmbed,
+form.fsForm.fsMultiColumn {
+  padding: 0;
+  margin: 0; }
 
 .header-container {
   height: 90px; }
@@ -1530,6 +1542,9 @@ ul.attachments li:before {
 
 .article-attachments ul.attachments li:first-child {
   padding-top: 20px; }
+
+strong {
+  font-weight: bold; }
 
 @media all and (max-width: 480px) {
   #home-page-search form.search input[type="submit"] {

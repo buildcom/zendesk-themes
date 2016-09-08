@@ -14,3 +14,11 @@
 body a.submit-a-request.btn {
   padding: 7px 8px;
 }
+
+.new-request-desktop-btns,
+.new-request-mobile-btns {
+  margin-bottom: 15px;
+  .btn-diagnostic {
+    margin-right: 10px;
+  }
+}

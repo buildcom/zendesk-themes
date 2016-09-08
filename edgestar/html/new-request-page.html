@@ -25,19 +25,30 @@
       We are Here to Help
     </h3>
     <p>
-      Please select one of the forms below:
+      Our goal is to provide the highest level of product service and support. If you have searched our support articles and are still in need of additional help, you may contact us using one of our service request forms.
+    </p>
+    <p>
+      Please select the appropriate form below:
     </p>
 
-    <div class="desktop-btns hidden-xs">
-      <button type="button" class="btn btn-default" data-toggle="modal" data-target=".diagnostic-form">Submit A Self Help Diagnostic Request Form</button> | 
-      <button type="button" class="btn btn-default" data-toggle="modal" data-target=".service-request-form">Submit A Standard Request Form</button>
+    <!-- DESKTOP BUTTONS -->
+    <div class="new-request-desktop-btns hidden-xs">
+      <button type="button" class="btn btn-default btn-diagnostic" data-toggle="modal" data-target=".diagnostic-form">Click Here to Use the Self Help<br>Diagnostic Service Request Form</button>
+      <button type="button" class="btn btn-default btn-std-request" data-toggle="modal" data-target=".service-request-form">Click Here to Use the Standard<br>EdgeStar Request Form</button>
     </div>
     
-    <div class="mobile-btns visible-xs-block">
+    <!-- MOBILE BUTTONS -->
+    <div class="new-request-mobile-btns visible-xs-block">
       <button type="button" class="btn btn-default btn-lg btn-block" data-toggle="modal" data-target=".diagnostic-form">Self Help Diagnostic Request Form</button>
       <button type="button" class="btn btn-default btn-lg btn-block" data-toggle="modal" data-target=".service-request-form">Standard Request Form</button>
     </div>
 
+    <p>
+      <em><strong>NOTE</strong>: If you are unable to use one of our service request forms, you may email us directly at: <a href="mailto:service@edgestar.com">service@edgestar.com</a>.<br>
+      Please provide as much detail as possible when contacting us so that we may assist you in the most efficient manner.</em>
+    </p>
+    
+    <!-- DIAGNOSTIC FORM MODAL -->
     <div class="modal fade diagnostic-form" tabindex="-1" role="dialog" aria-labelledby="Self Help Diagnostic Request Form">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
@@ -55,6 +66,7 @@
       </div>
     </div>
 
+    <!-- SERVICE REQUEST FORM MODAL -->
     <div class="modal fade service-request-form" tabindex="-1" role="dialog" aria-labelledby="Standard Request Form">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
@@ -71,6 +83,7 @@
         </div>
       </div>
     </div>
+
     {{chat}}
 
   </div> <!-- end col -->
