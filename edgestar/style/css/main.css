@@ -1076,6 +1076,7 @@ a.home-section-card {
     font-size: 2.25em; }
 
 .promoted-articles h3 {
+  visibility: hidden;
   margin-top: 0; }
 
 .navigation .navbar-default {
