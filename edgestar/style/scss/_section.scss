@@ -1,0 +1,16 @@
+#section_articles_container {
+
+  .section {
+    h3.title {
+      color: $brand-a;
+      padding: 0 0 5px;
+      margin: 0;
+      font-size: 1em;
+      font-weight: 700;
+      display: inline-block;
+    }
+    li a {
+      color: #5b5b5b;
+    }
+  }
+}

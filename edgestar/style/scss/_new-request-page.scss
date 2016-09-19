@@ -20,26 +20,19 @@ ul.nav.nav-tabs > li.active {
     border-bottom: 8px solid $brand-d;
   }
 }
-
-#fs-accordion-form {
-  
-  .fsBody.fsEmbed {
-    padding: 0;
+ 
+.diagnostic-form,
+.service-request-form {
+  .modal-footer {
+    text-align: center;
+    .btn.btn-danger {
+      padding: 10px 30px;
+    }
   }
+}
 
-  .panel-heading {
-    padding: 0;
-  }
-
-  .fs-panel-link {
-    display: block;
-    padding: 15px;
-  }
-
-  .panel-collapse.collapse.fs-panel-content {
-    height: auto;
-  }
-
+.fsBody.fsEmbed {
+  padding: 0;
 }
 
 .form {

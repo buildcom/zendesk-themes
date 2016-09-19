@@ -1,9 +1,28 @@
 .btn {
   background: $brand-a;
-  color: #fff;
+  color: $base-a;
   display: inline-block;
+  &.btn-default {
+    color: $base-a;
+    background: $brand-a;
+    &:hover, &:focus {
+      background: $brand-edark1;
+    }
+  }
 }
 
 body a.submit-a-request.btn {
   padding: 7px 8px;
+}
+
+.new-request-desktop-btns,
+.new-request-mobile-btns {
+  margin-bottom: 15px;
+  .btn-diagnostic,
+  .btn-std-request {
+    padding: 10px 20px;
+  }
+  .btn-diagnostic {
+    margin-right: 10px;
+  }
 }

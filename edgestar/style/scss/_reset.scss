@@ -11,7 +11,14 @@ textarea, button, input {
   outline: 0;
 }
 
+html { 
+  overflow: hidden; 
+  height: 100%; 
+}
+
 body {
+  overflow: auto;
+  height: 100%;
   font-family: $primary-site-font !important;
   padding-bottom: 40px;
 }
@@ -34,11 +41,6 @@ body a {
     text-decoration: underline;
     color: $brand-a;
   }
-}
-
-h3 {
-  font-size: 1.3em;
-  font-weight: 600;
 }
 
 ul li {
