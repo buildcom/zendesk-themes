@@ -53,7 +53,7 @@ $(document).ready(function() {
   // Swap text for contact form at the top of the page
   $('a.submit-a-request.btn').text('Contact EdgeStar Support');
   // Swap text "Promoted articles" => "Promoted Topics"
-  $('.promoted-article-panel .promoted-articles h3').text('Promoted Topics').css('visibility','visible');
+  $('.promoted-article-panel .promoted-articles h3').text('Popular Topics').css('visibility','visible');
   
   /**
   * Custom icon. Super hacky.
