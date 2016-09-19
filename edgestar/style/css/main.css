@@ -6,7 +6,13 @@ textarea, button, input {
   padding: 0;
   outline: 0; }
 
+html {
+  overflow: hidden;
+  height: 100%; }
+
 body {
+  overflow: auto;
+  height: 100%;
   font-family: "Open Sans", Helvetica, Arial, sans-serif !important;
   padding-bottom: 40px; }
 
@@ -25,10 +31,6 @@ body a {
   body a:hover, body a:focus {
     text-decoration: underline;
     color: #034667; }
-
-h3 {
-  font-size: 1.3em;
-  font-weight: 600; }
 
 ul li {
   list-style: none; }
@@ -183,6 +185,11 @@ body a.submit-a-request.btn {
 .new-request-desktop-btns,
 .new-request-mobile-btns {
   margin-bottom: 15px; }
+  .new-request-desktop-btns .btn-diagnostic,
+  .new-request-desktop-btns .btn-std-request,
+  .new-request-mobile-btns .btn-diagnostic,
+  .new-request-mobile-btns .btn-std-request {
+    padding: 10px 20px; }
   .new-request-desktop-btns .btn-diagnostic,
   .new-request-mobile-btns .btn-diagnostic {
     margin-right: 10px; }
@@ -1028,10 +1035,6 @@ section.promoted-articles h3 {
   vertical-align: middle;
   float: none; }
 
-.wh-one-hundred-percent {
-  width: 100%;
-  height: 100%; }
-
 .header-bg {
   background: url("http://p4.zdassets.com/hc/theme_assets/1021718/200071026/header-v4.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -1148,18 +1151,15 @@ ul.nav.nav-tabs > li.active {
     border-right: 8px solid transparent;
     border-bottom: 8px solid #045e8a; }
 
-#fs-accordion-form .fsBody.fsEmbed {
+.diagnostic-form .modal-footer,
+.service-request-form .modal-footer {
+  text-align: center; }
+  .diagnostic-form .modal-footer .btn.btn-danger,
+  .service-request-form .modal-footer .btn.btn-danger {
+    padding: 10px 30px; }
+
+.fsBody.fsEmbed {
   padding: 0; }
-
-#fs-accordion-form .panel-heading {
-  padding: 0; }
-
-#fs-accordion-form .fs-panel-link {
-  display: block;
-  padding: 15px; }
-
-#fs-accordion-form .panel-collapse.collapse.fs-panel-content {
-  height: auto; }
 
 .form {
   max-width: 600px;
@@ -1383,6 +1383,17 @@ h1.subject-head {
   padding: 25px 0;
   font-weight: 600; }
 
+#section_articles_container .section h3.title {
+  color: #034667;
+  padding: 0 0 5px;
+  margin: 0;
+  font-size: 1em;
+  font-weight: 700;
+  display: inline-block; }
+
+#section_articles_container .section li a {
+  color: #5b5b5b; }
+
 #home-page-search form.search input[type="submit"] {
   border: 2px solid #3b3b3b;
   cursor: pointer;
@@ -1454,17 +1465,6 @@ h1.subject-head {
     background: url("http://p4.zdassets.com/hc/theme_assets/1021718/200071026/search-submit-dark-grey.png") no-repeat center center #fff;
     background-size: 40%;
     text-indent: -9999px; }
-
-.section h3 {
-  color: #034667;
-  padding: 0 0 5px;
-  font-size: 1.3em;
-  font-weight: 600;
-  margin: 0;
-  display: inline-block; }
-
-.section li a {
-  color: #5b5b5b; }
 
 .search-results-column {
   width: 100%; }

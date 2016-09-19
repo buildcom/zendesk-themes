@@ -130,11 +130,15 @@ $(document).ready(function() {
   });
 
   /**
-  * Set active class on form
+  * On click, jump user to the top of the form
   */
 
-  $('.fs-panel-heading').click(function(){
-    $(this).addClass('active');
+  var top = $('.modal-header').offset().top;
+
+  $('.fsNextButton').click(function(){
+    $('.diagnostic-form').animate({
+      scrollTop: top
+    }, 'slow');
   });
 
   /**
