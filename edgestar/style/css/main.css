@@ -1079,6 +1079,21 @@ a.home-section-card {
   visibility: hidden;
   margin-top: 0; }
 
+.panel.panel-diag-promo {
+  border: 2px #034667 solid; }
+  .panel.panel-diag-promo .panel-body {
+    padding: 0; }
+  .panel.panel-diag-promo .diag-promo-cta {
+    display: block;
+    text-decoration: none;
+    font-size: 1.7em;
+    padding: 15px;
+    background: #fff;
+    transition: box-shadow .5s; }
+    .panel.panel-diag-promo .diag-promo-cta:hover {
+      cursor: pointer;
+      box-shadow: 0px 0px 10px #353333; }
+
 .navigation .navbar-default {
   background: #353333;
   border: none;
