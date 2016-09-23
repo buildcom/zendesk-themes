@@ -93,6 +93,29 @@ footer {
     padding: 20px;
   }
 
+  .persistent-diag-form {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    border-radius: 4px;
+    color: white;
+    background-color: $brand-a;
+    z-index: 50;
+    
+    &:hover {
+      cursor: pointer;
+    }
+
+    a.diag-promo-cta {
+      display: block;
+      padding: 20px;
+      color: $base-a;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
 }
 
 .comment-header {
