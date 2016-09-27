@@ -49,3 +49,6 @@ $system-f:      #990000; //final price
 $primary-site-font: 'Open Sans', Helvetica, Arial, sans-serif;
 $primary-site-font-condensed: 'Open Sans Condensed', Helvetica, Arial, sans-serif;
 
+$orange: #FFA500;
+$orange-light: lighten($orange, 10%);
+$orange-dark: darken($orange, 10%);
