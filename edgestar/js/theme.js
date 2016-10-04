@@ -30,7 +30,8 @@ jQuery(window).load(function() { // Make sure the whole site is loaded
 $(document).ready(function() {
 
   // Add btn class to string of classes
-  var addBtnClass = '.top-header a.login, .section-subscribe > a.dropdown-toggle, .article-subscribe > a';
+  // var addBtnClass = '.top-header a.login, .section-subscribe > a.dropdown-toggle, .article-subscribe > a';
+  var addBtnClass = '.section-subscribe > a.dropdown-toggle, .article-subscribe > a';
   $(addBtnClass).addClass('btn');
 
   // In breadcrumbs, make current page use active class
