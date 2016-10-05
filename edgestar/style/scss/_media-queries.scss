@@ -9,7 +9,7 @@
       }
 
       input#query { 
-        font-size: 1.25em;
+        // font-size: 1.25em;
       }
     }
   }
@@ -24,7 +24,7 @@
   }
 
   .top-header a, span#user-name {
-    font-size: 0.9em;
+    // font-size: 0.9em;
   }
 
   .top-header {
@@ -85,6 +85,8 @@
 
   .regular-search-wrapper {
     text-align: left;
+    padding-top: 0;
+    margin-bottom: 15px;
     
     input[type="submit"] {
       background-size: 25%;
@@ -141,9 +143,16 @@
     padding: 10px 18px;
     margin: 15px 40px;
   }
+  
+  #mobile-nav ul.nav.navbar-nav {
 
-  ul.nav.navbar-nav.menu {
-    padding: 0 15px;
+    &.menu {
+      padding: 0 15px;
+    }
+
+    &.navbar-right.self-diag-link {
+      margin-right: 0;
+    }
   }
 
 }

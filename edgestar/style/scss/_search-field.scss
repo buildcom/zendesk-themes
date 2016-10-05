@@ -29,8 +29,7 @@
     border: solid $base-e;
     border-width: 2px 0 2px 2px;
     color: $base-e;
-    font-family: $primary-site-font;
-    font-size: 2em;
+    font-family: $primary-font;
     height: 60px;
     margin: 0 0 30px 0;
     padding: 0 0 0 5%;
@@ -45,7 +44,7 @@
   .searchbox {
     margin-top: 12px;
     > label {
-      font-size: 1.1em;
+      
     }
   }
 
@@ -61,7 +60,6 @@
         a {
           color: $brand-a;
           font-weight: 500;
-          font-size: 0.9em;
         }
       }
     }
@@ -69,10 +67,11 @@
 }
 
 .regular-search-wrapper {
+  padding-top: 15px;
+  margin-right: -15px;
   text-align: right;
 
   input[type="search"] {
-    width: 70%;
     padding: .5em;
     border: 1px solid $base-e;
     border-top-left-radius: 4px;
@@ -87,7 +86,7 @@
     margin-left: -7px;
     margin-top: -2px;
     background: url("http://p4.zdassets.com/hc/theme_assets/1021718/200071026/search-submit-dark-grey.png") no-repeat center center #fff;
-    background-size: 40%;
+    background-size: 22px;
     text-indent: -9999px;
   }
 

@@ -46,9 +46,21 @@ $system-f:      #990000; //final price
 // ZENDESK VARIABLES
 /////////////////////
 
-$primary-site-font: 'Open Sans', Helvetica, Arial, sans-serif;
-$primary-site-font-condensed: 'Open Sans Condensed', Helvetica, Arial, sans-serif;
+// FONT FAMILY
+$primary-font: 'Open Sans', Helvetica, Arial, sans-serif;
+$primary-font-condensed: 'Open Sans Condensed', Helvetica, Arial, sans-serif;
 
+// FONT SIZE
+$title-font-size: 1em;
+$primary-font-size: 1em;
+$display-font-size: 1.6em;
+
+// FONT WEIGHT
+$title-font-weight: bold;
+$primary-font-weight: normal;
+$condensed-font-weight: 400;
+
+// COLOR
 $orange: #C73F07;
 $orange-light: lighten($orange, 10%);
 $orange-dark: darken($orange, 10%);

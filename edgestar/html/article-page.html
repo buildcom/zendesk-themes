@@ -52,8 +52,8 @@
          <div class="article-vote">
             <span class="article-vote-question">{{t 'was_this_article_helpful'}}</span>
             <div class="article-vote-controls">
-               {{vote 'up' class='article-vote-up' selected_class='article-voted' role='button'}}
-               {{vote 'down' class='article-vote-down' selected_class='article-voted' role='button'}}
+               {{vote 'up' class='article-vote-up btn' selected_class='article-voted' role='button'}}
+               {{vote 'down' class='article-vote-down btn' selected_class='article-voted' role='button'}}
             </div>
             <small class="article-vote-count">
             {{vote 'label' class='article-vote-label'}}
@@ -63,7 +63,7 @@
          <!-- {{share}} -->
       </div>
       <section class="article-comments users-comment">
-         <h2>{{t 'comments'}} <i class="fa fa-comments"></i></h2>
+         <h3>{{t 'comments'}} <i class="fa fa-comments"></i></h3>
          <div class="article-comments-inner">
             {{#if comments}}
             <ul class="comment-list">
@@ -115,7 +115,7 @@
             <div class="comment-container">
                {{textarea 'body' rows='4'}}
                <div class="comment-form-controls">
-                  {{input type='submit'}}
+                  {{input class='btn' type='submit'}}
                </div>
             </div>
             {{/form}}
