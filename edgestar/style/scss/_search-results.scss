@@ -5,19 +5,16 @@
 .search-results h1 {
   border-bottom: 1px solid #eee;
   border-top: 1px solid #eee;
-  font-size: 1.4em;
   font-weight: 400;
   padding: 21px 0;
 }
 
 h2.search-results-subheading {
-  font-size: 1.4em;
 }
 
 .search-results-subheading-link {
   color: #495c79;
   float: right;
-  font-size: 16px;
   margin-top: -4%;
 }
 
@@ -28,23 +25,18 @@ h2.search-results-subheading {
 
 .search-result-link {
   color: $brand-a;
-  font-size: 1.2em;
   &:hover {
     color: $brand-a;
-    font-size: 1.2em;
   }
 }
 
 .search-result-description {
   color: #444444;
-  font-size: 1.1em;
 }
 
 .search-result-heading {
-  font-size: 1.9em;
   font-weight: 400;
   color: $brand-a;
-  font-size: 1.4em;
   font-weight: 600;
   padding: 0 0 20px;
 }

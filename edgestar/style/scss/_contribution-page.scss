@@ -7,7 +7,6 @@
     list-style-type: none;
     li {
       color: #000000;
-      font-size: 20px;
       font-weight: normal;
       &:first-child, &::before {
         display: none;
@@ -65,7 +64,6 @@ table {
 th {
   border-width: 1px 0;
   color: #bebebe;
-  font-size: 11px;
   font-weight: normal;
   white-space: nowrap;
   border-width: 0 0 1px;

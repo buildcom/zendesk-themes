@@ -3,7 +3,7 @@
   padding-top: 4%;
   min-height: 400px;
   .error-page-icon {
-    font-size: 4em;
+    font-size: 4em; // Special circumstance for font-size
   }
   a {
     
@@ -19,7 +19,6 @@
     margin: 0 auto;
   }
   h2 {
-    font-size: 1.2em;
     padding: 15px 0;
   }
 }

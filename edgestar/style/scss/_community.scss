@@ -21,7 +21,6 @@
 }
 
 .community-heading {
-  font-size: 18px;
   margin-top: 4%;
   width: 100%;
 }
@@ -55,7 +54,6 @@
 }
 
 .topic-heading, .question-heading, .answer-list-heading {
-  font-size: 13px;
   font-weight: bold;
   width: 100%;
 }
@@ -72,7 +70,6 @@
 
 .question-meta, .answer-meta, .topic-meta {
   color: #cccccc;
-  font-size: 11px;
 }
 
 .question, .answer {
@@ -91,7 +88,6 @@
     border-radius: 5px;
     color: #cccccc;
     display: inline-block;
-    font-size: 11px;
     padding: 7px 15px;
   }
 }
@@ -105,7 +101,6 @@
 }
 
 .vote-sum {
-  font-size: 15px;
   font-weight: bold;
   min-width: 60px;
   padding-left: 10px;
@@ -167,7 +162,6 @@
 }
 
 .question-title, .topic-title {
-  font-size: 15px;
   margin: -3px 0 5px;
 }
 
@@ -184,7 +178,6 @@
 .topic-meta span + span::before, .question-meta span + span::before, 
 .answer-meta span + span::before {
   content: "dot";
-  font-size: 10px;
   margin: 0 10px;
 }
 
@@ -219,7 +212,6 @@ ul.share {
 }
 
 .accordion-topics .glyphicon, .community-accordion .glyphicon {
-  font-size: 25px;
   display: table;
   float: none;
   height: 30px;
@@ -240,13 +232,11 @@ ul.share {
 
 .topic-controls, .question-controls, .answer-controls {
   float: right;
-  font-size: 11px;
 }
 
 .topic-meta span + span::before, .question-meta span + span::before,
 .answer-meta span + span::before {
   content: "dot";
-  font-size: 10px;
   margin: 0 10px;
 }
 
@@ -374,7 +364,6 @@ input[type="checkbox"] + label {
 }
 
 label {
-  font-size: 12px;
 }
 
 .community-sub-nav {
@@ -410,7 +399,6 @@ label {
   a::before {
     content: " ";
     font-family: "entypo";
-    font-size: 14px;
     margin-right: 10px;
     vertical-align: middle;
   }
@@ -422,7 +410,6 @@ body .topic {
 
 .question-meta, .answer-meta, .topic-meta {
   color: #cccccc;
-  font-size: 11px;
 }
 
 form#new_question {
@@ -438,7 +425,6 @@ form#new_question {
 }
 
 h2.request-heading {
-  font-size: 1.7em;
   text-transform: capitalize;
 }
 
@@ -471,7 +457,6 @@ textarea#answer_body {
 }
 
 .clearfix > h1, .form-column > h1 {
-  font-size: 1.8em;
 }
 
 .community-nav > ul, .community-sub-nav > ul {

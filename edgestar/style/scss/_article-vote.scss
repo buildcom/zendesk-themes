@@ -22,24 +22,13 @@ a {
   margin: 15px 0;
   a {
     color: $base-a;
-    font-size: 0.9em;
-    font-weight: 600;
     background-color: $brand-a;
     display: inline-block;
-    padding: 10px 18px;
     border-radius: 4px;
     &:hover, &:focus {
       color: $base-a;
     }
   }
-}
-
-span.article-vote-question {
-  font-size: 1.2em;
-}
-
-section.article-comments > h2 {
-  font-size: 1.5em;
 }
 
 a.see-all-articles {

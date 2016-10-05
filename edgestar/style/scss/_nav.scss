@@ -56,7 +56,6 @@ nav.pagination {
 }
 
 h1.page-header {
-  font-size: 1.8em;
   color: #555;
   border-color: transparent;
   margin: 0;
@@ -64,11 +63,10 @@ h1.page-header {
 }
 
 .breadcrumb-wrapper {
-  margin: 20px 0;
+  margin: 10px 0;
   .breadcrumbs {
     margin-bottom: 0;
     padding: 15px 0;
-    font-size: 1em;
     li {
       display: inline-block;
       .active {
@@ -80,7 +78,6 @@ h1.page-header {
         content: "\f054";
         font-family: FontAwesome;
         margin: 0 6px;
-        font-size: .8em;
       }
     }
   }
