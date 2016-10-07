@@ -68,7 +68,7 @@
 
 }
 
-@media all and (max-width: 767px) {
+@media all and (max-width: 768px) {
 
   .header-container {
     height: 65px;
@@ -153,6 +153,14 @@
     &.navbar-right.self-diag-link {
       margin-right: 0;
     }
+  }
+
+}
+
+@media all and (max-width: 992px) {
+  
+  .regular-search-wrapper {
+    text-align: left;
   }
 
 }

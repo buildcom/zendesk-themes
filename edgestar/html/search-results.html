@@ -13,12 +13,12 @@
 <div class="container">
   <div class="col-xs-12">
     <div class="search-results">
-      <h1>{{t 'results' query=query count=results_count}}</h1>
+      <h3>{{t 'results' query=query count=results_count}}</h3>
 
       <section class="search-results-column">
-        <h2 class="search-results-subheading">
+        <h3 class="search-results-subheading">
           {{t 'knowledge_base'}}
-        </h2>
+        </h3>
         {{#if article_results}}
           <ul class="search-results-list">
             {{#each article_results}}
@@ -44,9 +44,9 @@
 
       {{#if help_center.community_enabled}}
         <section class="search-results-column">
-          <h2 class="search-results-subheading">
+          <h3 class="search-results-subheading">
             {{t 'community'}}
-          </h2>
+          </h3>
           {{#if post_results}}
             <ul class="search-results-list">
               {{#each post_results}}
