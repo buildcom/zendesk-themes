@@ -28,8 +28,11 @@ jQuery(window).load(function() { // Make sure the whole site is loaded
 });
 
 $(document).ready(function() {
+  
+  /**
+  * Add btn class to string of classes
+  */
 
-  // Add btn class to string of classes
   // var addBtnClass = '.top-header a.login, .section-subscribe > a.dropdown-toggle, .article-subscribe > a';
   var addBtnClass = '.section-subscribe > a.dropdown-toggle, .article-subscribe > a';
   $(addBtnClass).addClass('btn');
@@ -57,7 +60,7 @@ $(document).ready(function() {
   $('.promoted-article-panel .promoted-articles h3').text('Popular Topics').css('visibility','visible');
   
   /**
-  * Custom icon. Super hacky.
+  * Custom icon. Super hacky - NEEDS REFACTOR 
   * As of now, no real way to distinguish between categories other than title and category ID
   */
 
@@ -105,7 +108,7 @@ $(document).ready(function() {
   });
 
   /**
-  * Work around to add clearfix on home page.
+  * Work around to add clearfix on home page - NEEDS REFACTOR
   */
 
   var $categoryCols = $('.home-section .col-sm-4.category-column');
@@ -119,7 +122,7 @@ $(document).ready(function() {
   });
 
   /**
-  * Work around to add clearfix on category page.
+  * Work around to add clearfix on category page - NEEDS REFACTOR
   */
 
   var $sectionCols = $('.section.col-xs-12.col-sm-6');
@@ -130,6 +133,23 @@ $(document).ready(function() {
     if (normalizer % 2 === 0) {
       $(clearFixAndHr).insertAfter($sectionCols[idx]);
     }
+  });
+
+  /**
+  * Hide Author name on search result - regular ol' JS
+  */
+  
+  // Custom prototype to capitalize the first letter within a string
+  String.prototype.capitalizeFirstLetter = function() {
+    return this.charAt(0).toUpperCase() + this.slice(1);
+  }
+
+  // Select all search result meta's
+  var searchResultArr = document.querySelectorAll('.search-result-meta');
+
+  // Loop over them, cut out everything before the word "in" and then capitalize "in".
+  searchResultArr.forEach(function(val, idx){
+    val.innerHTML = val.innerHTML.replace(val.innerHTML.substring(0, val.innerHTML.indexOf('in ')), '').capitalizeFirstLetter();
   });
 
   /**

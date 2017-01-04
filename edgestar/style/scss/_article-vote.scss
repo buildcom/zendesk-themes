@@ -32,15 +32,13 @@ a {
 }
 
 a.see-all-articles {
-  color: $base-a;
+  color: $brand-a;
+  display: inline-block;
   padding: 7px 15px;
-  transition: all 0.4s ease;
-  &:hover, &:before {
-    color: #000;
-    background: $base-a;
-    border: 1px solid;
-    transition: all 0.4s ease;
-  }
+  margin-top: 10px;
+  border-radius: 4px;
+  border: 1px $brand-a solid;
+  background: $base-a;
 }
 
 .question-controls a + a, .answer-controls a + a {
